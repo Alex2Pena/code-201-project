@@ -1,11 +1,11 @@
 # code-201-project
 
-![Wire Frame login](img/login.jpg)
-![WireFrame signup](img/signup.jpg)
-![Wire Frame profile](img/profile.jpg)
-![Wire Frame home](img/home.jpg)
-![Wire Frame creator](img/creator.jpg)
-![Wire Frame park](img/park.jpg)
+![Wire Frame homepage](img/Home Page.png)
+![Wire Frame signup](img/Sign Up.png)
+![Wire Frame aboutus](img/About Us.png)
+![Wire Frame home](img/Home Page.png)
+![Wire Frame creator](img/Create Pet.png)
+![Wire Frame park](img/Interaction Page.png)
 
 ![Domain Modeling](img/domain model.png)
 
@@ -19,7 +19,7 @@ Add other animals,
 Rating system
 Interact with games
 
-![Software Requirements](https://docs.google.com/document/d/173hUG0jLhlO0B9NuDHPdGu6cvSxlfMRySBnzksv-OlE/edit?usp=sharing)
+![Software Requirements](img/Software Requirements.pdf)
 
 1-->Login page
 2-->User can login to account
