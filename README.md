@@ -1,13 +1,13 @@
 # code-201-project
 
-![Wire Frame homepage](img/Home Page.png)
-![Wire Frame signup](img/Sign Up.png)
-![Wire Frame aboutus](img/About Us.png)
-![Wire Frame home](img/Home Page.png)
-![Wire Frame creator](img/Create Pet.png)
-![Wire Frame park](img/Interaction Page.png)
+[Wire Frame homepage](img/Home Page.png)
+[Wire Frame signup](img/Sign Up.png)
+[Wire Frame aboutus](img/About Us.png)
+[Wire Frame home](img/Home Page.png)
+[Wire Frame creator](img/Create Pet.png)
+[Wire Frame park](img/Interaction Page.png)
 
-![Domain Modeling](img/domain model.png)
+[Domain Modeling](img/domain model.png)
 
 Pets (IRL)
 Social platform for pets to interact with other pets.
@@ -19,7 +19,7 @@ Add other animals,
 Rating system
 Interact with games
 
-![Software Requirements](img/Software Requirements.pdf)
+[Software Requirements](img/Software Requirements.pdf)
 
 1-->Login page
 2-->User can login to account
