@@ -1,6 +1,7 @@
 
 body{
     margin: 0;
+    background-image: url(/img/stock-photos/sky.jpg)
 }
 nav{
     position: relative;
@@ -9,7 +10,7 @@ nav{
     
 }
 header{
-    background-color:red;
+    height: 130px;
 }
 
 li{
@@ -17,20 +18,22 @@ li{
     list-style-type: none;
     display: inline-block;
     float: right;
-    padding-left: 15px;
-    padding-right: 25px;
+    padding-left: 0px;
+    padding-right: 20px;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
 }
 
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 5em;
-    position: absolute;
+    position: fixed;
     float: left;
     margin: 0px;
     padding-left: 15px;
-    padding-top: 15px;
+    padding-top: 0px;
+    display: inline-block;
 }
 
 #sky{
@@ -41,4 +44,12 @@ h1{
     width: 100%;
     position: fixed;
     bottom: 0;
+    left: 0px;
+}
+#navLinks img{
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-right: 20px;
 }
