@@ -1,13 +1,13 @@
 # code-201-project
 
-[Wire Frame homepage](img/Home Page.png)
-[Wire Frame signup](img/Sign Up.png)
-[Wire Frame aboutus](img/About Us.png)
-[Wire Frame home](img/Home Page.png)
-[Wire Frame creator](img/Create Pet.png)
-[Wire Frame park](img/Interaction Page.png)
+[Wire Frame homepage](https://github.com/Alex2Pena/code-201-project/blob/staging/img/Collection.png)
+[Wire Frame signup](https://github.com/Alex2Pena/code-201-project/blob/staging/img/Sign%20Up.png)
+[Wire Frame aboutus](https://github.com/Alex2Pena/code-201-project/blob/staging/img/About%20Us.png)
+[Wire Frame home](img/https://github.com/Alex2Pena/code-201-project/blob/staging/img/Home%20Page.png)
+[Wire Frame creator](https://github.com/Alex2Pena/code-201-project/blob/staging/img/Create%20Pet.png)
+[Wire Frame park](https://github.com/Alex2Pena/code-201-project/blob/staging/img/Interaction%20Page.png)
 
-[Domain Modeling](img/domain model.png)
+[Domain Modeling](https://github.com/Alex2Pena/code-201-project/blob/staging/img/domain%20model.png)
 
 Pets (IRL)
 Social platform for pets to interact with other pets.
@@ -19,7 +19,7 @@ Add other animals,
 Rating system
 Interact with games
 
-[Software Requirements](img/Software Requirements.pdf)
+[Software Requirements](https://github.com/Alex2Pena/code-201-project/blob/staging/img/Software%20Requirements.pdf)
 
 1-->Login page
 2-->User can login to account
