@@ -1,7 +1,8 @@
 
 body{
     margin: 0;
-    background-image: url(/img/stock-photos/sky.jpg)
+    background-image: url(/img/stockphotos/sky.jpg)
+
 }
 nav{
     position: relative;
@@ -35,7 +36,13 @@ h1{
     padding-top: 0px;
     display: inline-block;
 }
-
+.container{
+    padding-left: 50%;
+    padding-top: 5%;
+}
+.main{
+    color: seashell;
+}
 #sky{
     width: 100%;
     position: fixed;
