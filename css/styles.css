@@ -1,0 +1,44 @@
+
+body{
+    margin: 0;
+}
+nav{
+    position: relative;
+    margin-top: 0px;
+    float: right;
+    
+}
+header{
+    background-color:red;
+}
+
+li{
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+    float: right;
+    padding-left: 15px;
+    padding-right: 25px;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    position: absolute;
+    float: left;
+    margin: 0px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#sky{
+    width: 100%;
+    position: fixed;
+    bottom: 0;}
+#grass{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
