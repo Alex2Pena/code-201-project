@@ -14,7 +14,7 @@
         <nav>
             <ul id=navLinks>
                 <img src="img/stock-photos/paw.png" alt="paw pic">
-                <li>About Us</li>
+                <li><a href=aboutus.html></a>About Us</li>
                 <img src="img/stock-photos/paw.png" alt="paw pic">
                 <li>Add dog</li>
                 <img src="img/stock-photos/paw.png" alt="paw pic">
@@ -25,13 +25,24 @@
         </nav>
     </header>
     <main>
-        <section>
-            
-        </section>
+        <div class="container">
+            <div class="main">
+            <h2>Javascript Login Form Validation</h2>
+            <form id="form_id" method="post" name="myform">
+            <label>User Name :</label>
+            <input type="text" name="username" id="username"/>
+            <label>Password :</label>
+            <input type="password" name="password" id="password"/>
+            <input type="button" value="Login" id="submit" onclick="validate()"/>
+            </form>
+            <span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : Formget<br/>Password : formget#123</b></span>
+            </div>
+        </div>
     </main>
     
     <footer>
         <img id="grass" src="/img/stock-photos/park.png" alt="grass footer image">
     </footer>
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>
