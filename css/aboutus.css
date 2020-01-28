@@ -60,3 +60,9 @@ h1{
     float: right;
     margin-right: 20px;
 }
+#frame{
+    height: 710px;
+    position: absolute;
+    margin-left: 450px;
+    bottom: 150px;
+}
