@@ -26,3 +26,4 @@ function populateLocal(){
     var currentUser = JSON.stringify(storedProfile)
     localStorage.setItem('currentUser', currentUser)
 };
+
