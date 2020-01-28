@@ -3,8 +3,7 @@
 var petCardForm = document.getElementById('petCardForm');
 petCardForm.addEventListener('submit', handlePetCardFormSubmit);
 
-//TODO: Change to global profile, instead of profile defined here
-myProfile = 
+myProfile = JSON.parse(localStorage.getItem('currentUser'));
 
 var PetCard = function (name, image, sex, age, birthday, owner, dateCollected, dateCreated, 
     goodDog, floofiness, energy, snuggles, appetite, bravery){
