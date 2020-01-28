@@ -1,6 +1,6 @@
 'use strict'
 
-var myProfile = {}
+var myProfile = {};
 
 var Profile = function (username, password, email){
     this.username = username;
