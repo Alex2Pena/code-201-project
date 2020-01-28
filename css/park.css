@@ -81,10 +81,13 @@ h1{
     position: fixed;
     margin-right: 0;
 }
-#think{
+#lBubble{
+    height: 15em;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+#rBubble{
     height: 15em;
     margin-left: 50%;
-    margin-top: 2%;
-    z-index:
+    margin-top: -20%;
 }
-#
