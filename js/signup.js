@@ -14,5 +14,11 @@ function handleSubmit(event) {
   myProfile = new Profile(username, password, email);
   var stringify = JSON.stringify(myProfile);
   localStorage.setItem(username, stringify);
-    console.log(myProfile);
+}
+
+var checker = localStorage.getItem(username);
+var dataCheck = JSON.parse(checker);
+
+if(username === dataCheck){
+  alert('Username is taken. Try again');
 }
