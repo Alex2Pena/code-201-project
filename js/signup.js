@@ -22,3 +22,4 @@ var dataCheck = JSON.parse(checker);
 if(username === dataCheck){
   alert('Username is taken. Try again');
 }
+ 
