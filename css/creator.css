@@ -52,6 +52,7 @@ h1{
     position: fixed;
     bottom: 0;
     left: 0px;
+    z-index: -1;
 }
 #navLinks img{
     height: 20px;
@@ -59,4 +60,38 @@ h1{
     position: relative;
     float: right;
     margin-right: 20px;
+}
+
+#petCardForm {
+    margin: auto;
+    width: 480px;
+    background-color: #F0ECA2;
+    padding: 20px;
+}
+
+#petCardForm input {
+    margin-bottom: 10px;
+}
+
+#petCardForm label {
+    margin-top: 10px;
+    display: block;
+}
+
+#petCardForm fieldset label {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#petCardForm fieldset input {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#petCardForm button {
+    margin: 20px;
 }
