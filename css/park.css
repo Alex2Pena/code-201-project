@@ -60,3 +60,31 @@ h1{
     float: right;
     margin-right: 20px;
 }
+#fences{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    width: 400px;
+}
+#fence1{
+    height: 518px;
+    float: left;
+    display: inline-block;
+    position: relative;
+    margin-left: 0;
+    
+}
+#fence2{
+    height: 518px;
+    float: right;
+    display: inline-block;
+    position: fixed;
+    margin-right: 0;
+}
+#think{
+    height: 15em;
+    margin-left: 50%;
+    margin-top: 2%;
+    z-index:
+}
+#
