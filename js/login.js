@@ -1,4 +1,4 @@
-// Name and Password from the register-form
+// // Name and Password from the register-form
 // var name = document.getElementById('nameOne');
 // var pw = document.getElementById('pwordOne');
 
