@@ -1,9 +1,11 @@
 
+
 body{
     margin: 0;
     background-image: url(/img/stockphotos/sky.jpg)
 
 }
+
 nav{
     position: relative;
     margin-top: 0px;
@@ -15,7 +17,7 @@ header{
 }
 
 li{
-    position: relative;
+    position: fixed relative;
     list-style-type: none;
     display: inline-block;
     float: right;
@@ -24,6 +26,7 @@ li{
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
     margin-right: 20px;
+
 }
 
 h1{
@@ -46,12 +49,14 @@ h1{
 #sky{
     width: 100%;
     position: fixed;
-    bottom: 0;}
+    bottom: 0;
+}
 #grass{
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0px;
+    z-index: 0;
 }
 #navLinks img{
     height: 20px;
@@ -59,4 +64,80 @@ h1{
     position: relative;
     float: right;
     margin-right: 20px;
+}
+
+form{
+    float: left;
+    width: 500px;
+    padding-left: 500px;
+    padding-top: 100px;
+    margin-right: 500px;
+    line-height: 40px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    position: relative;
+}
+
+#habana {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 300px;
+    float: right;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+    margin-right: 200px;
+    position: relative;
+
+}
+
+#habanaP{
+    padding: 0 15px;
+    float: right;
+    margin-top: 400px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#smokey {
+    width: 200px;
+    border-radius: 50%;
+    float: left;
+    padding: 2px;
+    margin-left: 200px;
+    margin-top: 500px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+}
+
+#smokeyP{
+    padding: 0 15px;
+    float: left;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#tofu {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+    float: right;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+    margin-right: 200px;
+
+}
+
+#tofuP{
+    padding: 0 15px;
+    float: right;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+
 }
