@@ -24,8 +24,8 @@ function updateProfileDataInStorage() {
     }
 }
 
-var Dog1;
-var Dog2;
+var Dog1;//Jan28 ANTHONY: helloArray & byeArray are global, and contain Dog1, Dog2 variables. These variables will get actual pet name string values inside interaction page.
+var Dog2;//Jan28 ANTHONY: helloArray & byeArray are global, and contain Dog1, Dog2 variables. These variables will get actual pet name string values inside interaction page.
 var helloArrayTotals = [['Say what you feel and be who you are.', 'Why is that ' + Dog1 + '?', 'Because those who mind don\'t matter and those who matter don\'t mind.'], []];
 var byeArrayTotals = [['What a pleasure is was to meet with you.', 'We should do this again soon. Bye!'], []];
 var createInteraction = document.getElementsByTagName[1];
@@ -46,9 +46,6 @@ var generateInteraction = function (petCardType) {//JAN28 ANTHONY: petCardType c
             }
         }
     }
-
-
-
 }
 
 var randomPetCard = function () {
