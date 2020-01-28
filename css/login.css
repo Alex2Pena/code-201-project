@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    background-image: url(/img/stockphotos/sky.jpg)
+    background-image: url(/img/stockphotos/sky.jpg);
+    z-index: -2;
 
 }
 nav{
@@ -78,7 +79,18 @@ input[type=text], input[type=password] {
 }
 .mainCont{
     margin-top: 100px;
+    text-align: center;
+
 }
 input{
     border-radius: 20px;
+    background-color: rgb(200, 232, 243);
+}
+#submitbtn:hover{
+    background-color: pink;
+}
+
+button img{
+    width: 20px;
+    height: 20px;
 }

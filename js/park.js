@@ -1,16 +1,23 @@
-//global declarations//
+// //global declarations//
+// var speech = [];
+// var action = [];
+
+// //Random Number Generator//
+// function randomItem(){
+//   var randomNumber = Math.floor(Math.random() * speech.length);
+//   return randomNumber;
+// }
+// var leftBubble = document.getElementById('lBubble');
 
 
-//Random Number Generator//
-function randomItem(){
-    var randomNumber = Math.floor(Math.random() * dogTalk.length)
-    return randomNumber;
-}
+// click on the left bubble
+// leftBubble.addEventListener('onclick', function(event) {
+
+// },
+// This handler will be executed only once when the cursor
 function InteractionCreator(petCardMe, PetCardNew, helloArray,byeArray){
-    this.petCardMe = petCardMe
-    this.PetCardNew = PetCardNew
-    this.helloArray = helloArray
-    this.byeArray = byeArray
+  this.petCardMe = petCardMe;
+  this.PetCardNew = PetCardNew;
+  this.helloArray = helloArray;
+  this.byeArray = byeArray;
 }
-
-var interact1 = new InteractionCreator(petCardMe,PetCardNew, [])

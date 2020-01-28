@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var myProfile = JSON.parse(localStorage.getItem(String(currentUser)));
 
@@ -76,4 +76,3 @@ var randomByeArray = function () {
     var goodbye = byeArrayTotals.length;
     return Math.floor(Math.random() * goodbye);
 }
-
