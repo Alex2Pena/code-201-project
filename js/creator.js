@@ -1,27 +1,27 @@
-'use strict'
+'use strict';
 
 var petCardForm = document.getElementById('petCardForm');
 petCardForm.addEventListener('submit', handlePetCardFormSubmit);
 
+
 myProfile = JSON.parse(localStorage.getItem('currentUser'));
 
-var PetCard = function (name, image, sex, age, birthday, owner, dateCollected, dateCreated, 
-    goodDog, floofiness, energy, snuggles, appetite, bravery){
-        this.name = name;
-        this.image = image;
-        this.sex = sex;
-        this.age = age;
-        this.birthday = birthday;
-        this.owner = owner;
-        this.dateCollected = dateCollected;
-        this.dateCreated = dateCreated;
-        this.goodDog = goodDog;
-        this.floofiness = floofiness;
-        this.energy = energy;
-        this.snuggles = snuggles;
-        this.appetite = appetite;
-        this.bravery = bravery;
-}
+var PetCard = function (name, image, sex, age, birthday, owner, dateCollected, dateCreated, goodDog, floofiness, energy, snuggles, appetite, bravery){
+  this.name = name;
+  this.image = image;
+  this.sex = sex;
+  this.age = age;
+  this.birthday = birthday;
+  this.owner = owner;
+  this.dateCollected = dateCollected;
+  this.dateCreated = dateCreated;
+  this.goodDog = goodDog;
+  this.floofiness = floofiness;
+  this.energy = energy;
+  this.snuggles = snuggles;
+  this.appetite = appetite;
+  this.bravery = bravery;
+};
 
 function handlePetCardFormSubmit(event){
     event.preventDefault();
@@ -63,6 +63,18 @@ function handlePetCardFormSubmit(event){
         myProfile.petCards.push(myPetCard);
         updateProfileDataInStorage();
     }
-    
+  }
+
+  // If a name match is not found, ok to create a new petCard
+  if (nameMatch===false) {
+    var currentDate = new Date();
+    var myPetCard = new PetCard(name,'', 'male', 2, 'November 4, 2018', myProfile.username, currentDate, currentDate, 0,0,0,0,0,0);
+    myProfile.petCards.push(myPetCard);
+    // TODO: Move update of local storage to separate function in global js
+    updateProfileDataInStorage();
+  } else {
+    alert('Oh no! Your profile already includes a pet with that name. You can edit the existing pet or delete it and make a new one. Or, you could make a new version of your pet with a different name. Either way is fine :)');
+  }
+
 
 }
