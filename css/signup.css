@@ -1,4 +1,4 @@
-
+/* 
 
 body{
     margin: 0;
@@ -145,8 +145,8 @@ button img{
     margin-top: 100px;
     font-family: 'Montserrat', sans-serif;
 
-}
-/* 
+} */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body{
@@ -156,10 +156,11 @@ body{
 #bg {
   position: absolute; 
   top: 0%; 
-  left: -50%; 
-  width: 200%; 
+  /* left: -50%;  */
+  width: 100%; 
   height: 200%;
   z-index: -99999999999999;
+
 }
 #bg img {
   position: absolute; 
@@ -167,9 +168,11 @@ body{
   left: 0; 
   right: 0; 
   bottom: 0; 
-  margin: auto; 
+  margin: auto;
+
   min-width: 50%;
   min-height: 50%;
+  
 }
 nav{
     position: relative;
@@ -233,11 +236,12 @@ h1{
 
 form{
     float: left;
-    width: 500px;
+    width: 400px;
     padding-left: 250px;
     padding-top: 100px;
-    margin-right: 500px;
+    margin-right: 200px;
     line-height: 40px;
+    text-align: center;
 }
 
 button{
@@ -251,15 +255,62 @@ button img{
     height: 20px;
 }
 
+#signUp{
+    float: center;
+}
+#ginger{
+    width: 200px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+    position: relative;
+    float: right;
+
+}
+
+#maus{
+    width: 200px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+    position: relative;
+    float: right;
+}
+#gustav{
+    width: 200px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+    position: relative;
+    float: right;
+    margin-right: 100px;
+
+}
+
+#tucker{
+    width: 200px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+    position: relative;
+    float: right;
+    margin-right: 100px;
+
+}
+
 #habana {
     width: 200px;
     border-radius: 50%;
-    margin-top: 900px;
+    margin-top: 400px;
     float: right;
     padding: 2px;
     border:1px solid #ffffff;
     background-color:rgb(255, 255, 255);
-    margin-right: 200px;
+    margin-right: -100px;
     position: relative;
 
 }
@@ -267,7 +318,7 @@ button img{
 #habanaP{
     padding: 0 15px;
     float: right;
-    margin-top: 750px;
+    margin-top: 475px;
     position: relative;
     font-family: 'Montserrat', sans-serif;
 
@@ -279,7 +330,7 @@ button img{
     float: left;
     padding: 2px;
     margin-left: 200px;
-    margin-top: 800px;
+    margin-top: 50px;
     border:1px solid #ffffff;
     background-color:rgb(255, 255, 255);
 }
@@ -287,7 +338,7 @@ button img{
 #smokeyP{
     padding: 0 15px;
     float: left;
-    margin-top: 100px;
+    margin-top: 80px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -295,7 +346,7 @@ button img{
 #tofu {
     width: 200px;
     border-radius: 50%;
-    margin-top: 100px;
+    margin-top: 50px;
     float: right;
     padding: 2px;
     border:1px solid #ffffff;
@@ -307,8 +358,8 @@ button img{
 #tofuP{
     padding: 0 15px;
     float: right;
-    margin-top: 100px;
+    margin-top: 80px;
     font-family: 'Montserrat', sans-serif;
 
 }
- */
+
