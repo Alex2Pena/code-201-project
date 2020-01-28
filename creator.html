@@ -25,12 +25,34 @@
         </nav>
     </header>
     <main>
-        
+        <form id="petCardForm">
+            <label>Your pet's name:</label>
+            <input name="petName" type="text">
+            <label>URL of pet picture:</label>
+            <input name="image" type="text">
+            <fieldset>
+                <legend>Boy or Girl?</legend>
+                <label>Boy Doggo</label>
+                <input name="sex" type="radio" value="boy" >
+                <label>Girl Doggo</label>
+                <input name="sex" type="radio" value="girl" checked>
+            </fieldset>
+            <label>How old is your pup?</label>
+            <input name="age" type="number">
+            <fieldset>
+                <label>Bad dog</label><input name="goodBoy" type="range" min="0" max="10" value="10"><label>GOOD GIRL</label><br>
+                <label>Wiry</label><input name="floofiness" type="range" min="0" max="10" value="5"><label>Floofy</label><br>
+                <label>Lazy bones</label><input name="energy" type="range" min="0" max="10" value="5"><label>Ball of energy</label><br>
+                <label>No snuggles</label><input name="snuggles" type="range" min="0" max="10" value="5"><label>Loves snuggles</label><br>
+                <label>Very picky</label><input name="appetite" type="range" min="0" max="10" value="5"><label>Will eat anything</label><br>
+                <label>Total coward</label><input name="bravery" type="range" min="0" max="10" value="5"><label>Fears nothing</label><br>
+            </fieldset>
+            <button type="submit">Create New Pet Card!</button>
+        </form>
     </main>
-    
     <footer>
         <img id="grass" src="/img/stockphotos/park.png" alt="grass footer image">
     </footer>
-    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/creator.js"></script>
 </body>
 </html>
