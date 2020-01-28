@@ -31,7 +31,9 @@ var PetCard = function (name, image, sex, age, birthday, owner, dateCollected, d
 
 function handlePetCardFormSubmit(event){
     event.preventDefault();
-    var name = 'Tucker';
+    var inputs = event.target.getElementsByTagName('input');
+    var name = inputs[0].textContent;
+    
     
     // Check if the inputted name already exists on a petCard on this profile 
     var nameMatch = false;
@@ -48,8 +50,7 @@ function handlePetCardFormSubmit(event){
         var myPetCard = new PetCard(name,'', 'male', 2, 'November 4, 2018', myProfile.username, currentDate, currentDate, 0,0,0,0,0,0);
         myProfile.petCards.push(myPetCard);
         // TODO: Move update of local storage to separate function in global js
-        var stringData = JSON.stringify(myProfile);
-        localStorage.setItem('Profile', stringData);
+        updateProfileDataInStorage();
     } else {
         alert('Oh no! Your profile already includes a pet with that name. You can edit the existing pet or delete it and make a new one. Or, you could make a new version of your pet with a different name. Either way is fine :)');
     }
