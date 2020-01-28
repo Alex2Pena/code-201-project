@@ -13,33 +13,30 @@
         <img src="img/stockphotos/Background.png" alt="">
     </div>
     <header>
-        <h1>Dogs IRL</h1>
+        <h1>Dogs IRL <img id="mainLogo" src="img/main.png"></h1>
         <nav>
             <ul id="navLinks">
-                <img src="img/stockphotos/paw.png" alt="paw pic">
                 <li><a href="aboutus.html">About Us</a></li>
-                <img src="img/stockphotos/paw.png" alt="paw pic">
-                <li><a href="creator.html">Add dog</a></li>
-                <img src="img/stockphotos/paw.png" alt="paw pic">
-                <li><a href="park.html">The Park</a></li>
-                <img src="img/stockphotos/paw.png" alt="paw pic">
-                <li><a href="profile.html">Profile</a></li>
+                <img id="topPaw" src="img/stockphotos/paw.png" alt="paw pic">
+                <li><a href="login.html">Log In</a></li>
+                <img class="topPaw" src="img/stockphotos/paw.png" alt="paw pic">
             </ul>
         </nav>
     </header>
     <main>
-        <form>
+        <form id="signUp1">
             <fieldset>
                 <label>Username:</label>
-                <input name="name" type="text">
+                <input name ="nameOne" type="text" placeholder="Enter username*">
                 <br>
                 <label>Create Password:</label>
-                <input name="password" type="text">
+                <input name ="pwordOne" type="password"placeholder="Enter new password*">
                 <br>
                 <label>Email:</label>
-                <input name="password" type="text">
+                <input name="email" type="text" placeholder="Enter Email*">
                 <br>
-                <button id="signUp"> Sign Up! <img src="img/stockphotos/paw.png"></button>
+                <br>
+                <button onclick="window.location.href = 'creator.html';"-- id="signUp"> Sign Up! <img src="img/stockphotos/paw.png"></button>
               </fieldset>
         </form>
         <div>
@@ -47,6 +44,9 @@
             <img id="ginger" src="img/Ginger.jpg">
             <img id="tucker" src="img/Tucker.jpg">
             <img id="maus" src="img/maus.png">
+            <img id="logo1" src="img/logo.png">
+            <img id="logo2" src="img/logo.png">
+            <img id="logo3" src="img/logo.png">
         </div>
         <div>
             <img id="habana" src="img/habana.jpeg">
@@ -62,9 +62,8 @@
     </main>
     
     <footer>
-
-        <!-- <img id="grass" src="/img/stockphotos/park.png" alt="grass footer image"> -->
     </footer>
-    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
 </body>
 </html>
