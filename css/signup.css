@@ -1,162 +1,18 @@
-/* 
-
-body{
-    margin: 0;
-    background-image: url(/img/stockphotos/sky.jpg)
-
-}
-
-nav{
-    position: relative;
-    margin-top: 0px;
-    float: right;
-    
-}
-header{
-    height: 130px;
-}
-
-li{
-    position: fixed relative;
-    list-style-type: none;
-    display: inline-block;
-    float: right;
-    padding-left: 0px;
-    padding-right: 20px;
-    font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
-    margin-right: 20px;
-
-}
-
-h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5em;
-    position: fixed;
-    float: left;
-    margin: 0px;
-    padding-left: 15px;
-    padding-top: 0px;
-    display: inline-block;
-}
-.container{
-    padding-left: 50%;
-    padding-top: 5%;
-}
-.main{
-    color: seashell;
-}
-#sky{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-#grass{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0px;
-    z-index: 0;
-}
-#navLinks img{
-    height: 20px;
-    display: inline-block;
-    position: relative;
-    float: right;
-    margin-right: 20px;
-}
-
-form{
-    float: left;
-    width: 250px;
-    padding-left: 500px;
-    padding-top: 100px;
-    margin-right: 500px;
-    line-height: 40px;
-}
-
-button{
-    width: 100px;
-    height: 30px;
-    font-size: 15px;
-    position: relative;
-}
-button img{
-    width: 20px;
-    height: 20px;
-}
-
-#habana {
-    width: 200px;
-    border-radius: 50%;
-    margin-top: 300px;
-    float: right;
-    padding: 2px;
-    border:1px solid #ffffff;
-    background-color:rgb(255, 255, 255);
-    margin-right: 200px;
-    position: relative;
-
-}
-
-#habanaP{
-    padding: 0 15px;
-    float: right;
-    margin-top: 150px;
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-
-}
-
-#smokey {
-    width: 200px;
-    border-radius: 50%;
-    float: left;
-    padding: 2px;
-    margin-left: 200px;
-    margin-top: 200px;
-    border:1px solid #ffffff;
-    background-color:rgb(255, 255, 255);
-}
-
-#smokeyP{
-    padding: 0 15px;
-    float: left;
-    margin-top: 100px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-#tofu {
-    width: 200px;
-    border-radius: 50%;
-    margin-top: 100px;
-    float: right;
-    padding: 2px;
-    border:1px solid #ffffff;
-    background-color:rgb(255, 255, 255);
-    margin-right: 200px;
-
-}
-
-#tofuP{
-    padding: 0 15px;
-    float: right;
-    margin-top: 100px;
-    font-family: 'Montserrat', sans-serif;
-
-} */
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
 body{
     margin: 0;
 }
 
+#mainLogo{
+    padding-top: 10px;
+    width: 80px;
+}
 #bg {
   position: absolute; 
   top: 0%; 
-  /* left: -50%;  */
   width: 100%; 
   height: 200%;
   z-index: -99999999999999;
@@ -192,14 +48,14 @@ li{
     padding-left: 0px;
     padding-right: 20px;
     font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin-right: 20px;
 
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5em;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
     position: fixed;
     float: left;
     margin: 0px;
@@ -236,20 +92,53 @@ h1{
 
 form{
     float: left;
-    width: 400px;
+    width: 600px;
     padding-left: 250px;
     padding-top: 100px;
     margin-right: 200px;
     line-height: 40px;
     text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+input[type=text], input[type=password] {
+    width: 350 px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input{
+    border-radius: 20px;
+    background-color: rgb(200, 232, 243);
+    font-size: 20px;
 }
 
+#logo1, #logo2, #logo3{
+    width: 50px;
+    position: absolute;
+}
+
+#logo1{
+    top: 470px;
+    right: 300px;
+}
+#logo2{
+    top: 470px;
+    right: 552px;
+}
+#logo3{
+    top: 470px;
+    right: 805px;
+}
 button{
-    width: 100px;
-    height: 30px;
-    font-size: 15px;
+    width: 200px;
+    height: 45px;
+    font-size: 25px;
     position: relative;
 }
+
 button img{
     width: 20px;
     height: 20px;
@@ -258,108 +147,115 @@ button img{
 #signUp{
     float: center;
 }
+
 #ginger{
-    width: 200px;
+    width: 300px;
     border-radius: 50%;
     padding: 2px;
     border:1px solid #ffffff;
     background-color:rgb(255, 255, 255);
-    position: relative;
-    float: right;
-
-}
-
-#maus{
-    width: 200px;
-    border-radius: 50%;
-    padding: 2px;
-    border:1px solid #ffffff;
-    background-color:rgb(255, 255, 255);
-    position: relative;
-    float: right;
-}
-#gustav{
-    width: 200px;
-    border-radius: 50%;
-    padding: 2px;
-    border:1px solid #ffffff;
-    background-color:rgb(255, 255, 255);
-    position: relative;
-    float: right;
-    margin-right: 100px;
+    position: absolute;
+    top: 200px;
+    right:300px;
 
 }
 
 #tucker{
-    width: 200px;
+    width: 300px;
     border-radius: 50%;
     padding: 2px;
     border:1px solid #ffffff;
     background-color:rgb(255, 255, 255);
-    position: relative;
-    float: right;
-    margin-right: 100px;
+    position: absolute;
+    top: 200px;
+    right: 550px
+}
+#gustav{
+    width: 300px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    top: 200px;
+    right: 800px;
+
+}
+
+#maus{
+    width: 300px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    top: 200px;
+    right: 50px;
 
 }
 
 #habana {
     width: 200px;
     border-radius: 50%;
-    margin-top: 400px;
-    float: right;
     padding: 2px;
     border:1px solid #ffffff;
     background-color:rgb(255, 255, 255);
-    margin-right: -100px;
-    position: relative;
+    position: absolute;
+    right:150px;
+    top: 1100px;
 
 }
 
 #habanaP{
-    padding: 0 15px;
-    float: right;
-    margin-top: 475px;
-    position: relative;
+    position: absolute;
     font-family: 'Montserrat', sans-serif;
-
+    right: 400px;
+    top: 1120px;
+    text-align: right;
+    font-size: 30px;
 }
 
 #smokey {
     width: 200px;
     border-radius: 50%;
-    float: left;
     padding: 2px;
-    margin-left: 200px;
-    margin-top: 50px;
     border:1px solid #ffffff;
     background-color:rgb(255, 255, 255);
+    position: absolute;
+    top: 1275px;
+    left: 150px;
 }
 
 #smokeyP{
-    padding: 0 15px;
-    float: left;
-    margin-top: 80px;
+    position: absolute;
     font-family: 'Montserrat', sans-serif;
+    left: 400px;
+    top: 1300px;
+    text-align: center;
+    text-align: left;
+    font-size: 30px;
+    color: white;
 }
 
 
 #tofu {
     width: 200px;
     border-radius: 50%;
-    margin-top: 50px;
-    float: right;
     padding: 2px;
     border:1px solid #ffffff;
     background-color:rgb(255, 255, 255);
-    margin-right: 200px;
-
+    right:150px;
+    position: absolute;
+    top: 1400px;
 }
 
 #tofuP{
-    padding: 0 15px;
-    float: right;
-    margin-top: 80px;
+    position: absolute;
     font-family: 'Montserrat', sans-serif;
-
+    right: 400px;
+    top: 1420px;
+    text-align: center;
+    text-align: right;
+    font-size: 30px;
 }
 
