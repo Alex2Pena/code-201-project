@@ -60,3 +60,8 @@ h1{
     float: right;
     margin-right: 20px;
 }
+#profilePic{
+    height: 300px;
+    margin-left: 30%;
+    margin-right: 70%;
+}
