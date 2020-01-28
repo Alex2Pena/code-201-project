@@ -51,6 +51,7 @@ h1{
     position: fixed;
     bottom: 0;
     left: 0px;
+    z-index: -1;
 }
 #navLinks img{
     height: 20px;
@@ -58,4 +59,26 @@ h1{
     position: relative;
     float: right;
     margin-right: 20px;
+}
+input[type=text], input[type=password] {
+    width: 350 px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .container1{
+      width: 450px;
+      margin: auto;
+  }
+  .container2{
+    width: 450px;
+    margin: auto;
+}
+.mainCont{
+    margin-top: 100px;
+}
+input{
+    border-radius: 20px;
 }
