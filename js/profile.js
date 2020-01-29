@@ -66,6 +66,16 @@ function renderPetCards() {
 function renderProfile(){
   renderPetCards();
 }
+// Carrington adding a function to allow selection of current active pet to send to the park
+function addDropDownOptions(){
+    var dropDown = document.getElementById('petCardDrop')
+for ( var i = 0; i<myProfile.petCards.length; i++){   
+    var dropItems = document.createElement('option')
+    dropItems.textContent = myProfile.petCards[i].name
+    dropDown.appendChild(dropItems);
 
+}
+};
+addDropDownOptions();
 renderProfile();
 
