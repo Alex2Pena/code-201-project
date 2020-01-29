@@ -109,19 +109,20 @@ h2 img{
     height: 450px;
     width: 250px;
     margin: 20px;
-    background-color: whitesmoke;
+    margin-top: 0;
+    background-color: rgb(217, 241, 255);
     border-radius: 15px;
     padding: 15px;
     background-image: url(/img/bone.png);
     text-align: center;
-    box-shadow: 10px 5px 5px rgb(139, 139, 139);
+    box-shadow: 10px 5px 5px rgb(100, 100, 100);
     
 }
 #petCardsOwned div ul{
     list-style: none;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 25px;
-    color: rgba(41, 27, 1, 0.692);
+    color: rgba(24, 15, 0, 0.692);
 }
 #collection {
     margin: 50px;
@@ -152,6 +153,6 @@ h2 img{
     border-radius: 15px;
     padding: 15px;
     background-image: url(/img/bone.png);
-    box-shadow: 10px 5px 5px rgb(139, 139, 139);
+    box-shadow: 10px 5px 5px rgb(100, 100, 100);
 
 }
