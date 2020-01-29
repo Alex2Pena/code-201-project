@@ -74,13 +74,14 @@ fieldset{
     position: absolute;
     height: 200px;
     top: 400px;
-    left: 800px;
+    left: 700px;
     text-align: center ;
     border-radius: 40%;
     border-width: 4px;
     background-image: url(/img/bone.png);
     background-color: rgb(73, 167, 255);
     border-style: dashed;
+
 
 }
 
