@@ -1,9 +1,20 @@
 'use strict';
 
-var myProfile = JSON.parse(localStorage.getItem('currentUser'));
-var allProfiles = JSON.parse(localStorage.getItem('allProfiles'));
-var allPetCards = JSON.parse(localStorage.getItem('allPetCards'));
+var myProfile = {};
+var allProfiles = [];
+var allPetCards = [];
 
+function initialize () {
+  if (JSON.parse(localStorage.getItem('currentUser'))){
+    myProfile = JSON.parse(localStorage.getItem('currentUser'));
+  }
+  if (JSON.parse(localStorage.getItem('allProfiles'))){
+    allProfiles = JSON.parse(localStorage.getItem('allProfiles'));
+  }
+  if (JSON.parse(localStorage.getItem('allPetCards'))){
+    allPetCards = JSON.parse(localStorage.getItem('allPetCards'));
+  }
+};
 //Constructor Function for creating profiles//
 var Profile = function (username, password, email) {
   this.username = username;
@@ -85,3 +96,5 @@ var randomByeArray = function () {
   var goodbye = byeArrayTotals.length;
   return Math.floor(Math.random() * goodbye);
 };
+
+initialize();
