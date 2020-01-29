@@ -15,9 +15,9 @@
 
 // },
 // This handler will be executed only once when the cursor
-function InteractionCreator(petCardMe, PetCardNew, helloArray,byeArray){
-  this.petCardMe = petCardMe;
-  this.PetCardNew = PetCardNew;
-  this.helloArray = helloArray;
-  this.byeArray = byeArray;
-}
+// function InteractionCreator(petCardMe, PetCardNew, helloArray,byeArray){
+//   this.petCardMe = petCardMe;
+//   this.PetCardNew = PetCardNew;
+//   this.helloArray = helloArray;
+//   this.byeArray = byeArray;
+// }
