@@ -27,6 +27,10 @@ function check() {
 //     var storedPw = storedProfile.password;
 //     var storedName = storedProfile.name;
 
+function populateLocal(){
+    var currentUser = JSON.stringify(storedProfile)
+    localStorage.setItem('currentUser', currentUser)
+};
 
 //     // check if stored data from register-form is equal to data from login form
 //    if(userName.value == storedName && userPw.value == storedPw) {
@@ -42,5 +46,3 @@ function populateLocal(){
     var currentUser = JSON.stringify(storedProfile)
     localStorage.setItem('currentUser', currentUser)
 };
-
-populateLocal();

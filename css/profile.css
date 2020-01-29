@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
 body{
     margin: 0;
-    background-image: url(/img/stockphotos/sky.jpg)
+    background-image: url(/img/stockphotos/sky.jpg);
+    z-index: -2;
 
+}
+#mainLogo{
+    padding-top: 10px;
+    width: 80px;
 }
 nav{
     position: relative;
@@ -14,7 +22,7 @@ header{
     height: 130px;
 }
 
-li{
+nav li{
     position: relative;
     list-style-type: none;
     display: inline-block;
@@ -22,13 +30,13 @@ li{
     padding-left: 0px;
     padding-right: 20px;
     font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin-right: 20px;
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5em;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
     position: fixed;
     float: left;
     margin: 0px;
@@ -52,6 +60,7 @@ h1{
     position: fixed;
     bottom: 0;
     left: 0px;
+    z-index: -1;
 }
 #navLinks img{
     height: 20px;
@@ -60,8 +69,58 @@ h1{
     float: right;
     margin-right: 20px;
 }
-#profilePic{
-    height: 300px;
-    margin-left: 30%;
-    margin-right: 70%;
+
+h2 {
+    display: block;
+    /* clear: left; */
+}
+
+#petCardsOwned {
+    height: 500px;
+    margin: 50px;
+}
+
+#petCardsOwned h3 {
+    margin: 5px;
+}
+
+#petCardsOwned img{
+    width: 200px;
+    margin: 0px 25px;
+    border-radius: 15px;
+}
+
+#petCardsOwned div{
+    float:left;
+    height: 400px;
+    width: 250px;
+    margin: 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#collection {
+    height: 600px;
+    margin: 50px;
+}
+
+#collection h3 {
+    margin: 5px;
+}
+
+#collection img{
+    width: 100px;
+    margin: 0px 25px;
+    border-radius: 15px;
+}
+
+#collection div{
+    float:left;
+    height: 125px;
+    width: 125px;
+    margin: 10px;
+    background-color: lightblue;
+    border-radius: 15px;
+    padding: 15px;
 }

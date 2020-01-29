@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
 body{
     margin: 0;
     background-image: url(/img/stockphotos/sky.jpg);
     z-index: -2;
-
+}
+#mainLogo{
+    padding-top: 10px;
+    width: 80px;
 }
 nav{
     position: relative;
@@ -22,13 +29,13 @@ li{
     padding-left: 0px;
     padding-right: 20px;
     font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin-right: 20px;
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5em;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
     position: fixed;
     float: left;
     margin: 0px;
@@ -49,6 +56,7 @@ h1{
     bottom: 0;}
 #grass{
     width: 100%;
+
     position: fixed;
     bottom: 0;
     left: 0px;
@@ -76,6 +84,7 @@ input[type=text], input[type=password] {
   .container2{
     width: 450px;
     margin: auto;
+    text-align: center;
 }
 .mainCont{
     margin-top: 100px;
@@ -86,11 +95,36 @@ input{
     border-radius: 20px;
     background-color: rgb(200, 232, 243);
 }
+
 #submitbtn:hover{
+    background-color: pink;
+}
+#loginButton:hover{
     background-color: pink;
 }
 
 button img{
     width: 20px;
     height: 20px;
+}
+
+#pep{
+    width: 250px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    top: 200px;
+    left:300px;
+}
+#pep2{
+    width: 250px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    top: 200px;
+    right:300px;
 }
