@@ -40,22 +40,34 @@ function getProfileDataFromStorage(username) {
 }
 //Updates and stringifies profile data into LOCAL STORAGE//
 function updateProfileDataInStorage() {
+  
   if (myProfile.username) {
-    var allProfilesDataString = JSON.stringify(allProfiles);
     var myProfileDataString = JSON.stringify(myProfile);
+    updateAllProfilesFromMyProfile();
+    var allProfilesDataString = JSON.stringify(allProfiles);
     var allPetCardsDataString = JSON.stringify(allPetCards);
+    localStorage.setItem('currentUser', myProfileDataString); 
     localStorage.setItem('allProfiles', allProfilesDataString);
-    localStorage.setItem('currentUser', myProfileDataString);
     localStorage.setItem('allPetCards', allPetCardsDataString);
   }
 }
+
+function updateAllProfilesFromMyProfile (){
+  if(myProfile){
+    for (var i = 0; i< allProfiles.length; i++){
+      if(allProfiles[i].username === myProfile.username){
+        allProfiles[i] = myProfile;
+      }
+    }
+  }
+}
+
 //Creates the interaction content and random petCard//
 function Interaction(petCardMe, petCardNew, helloArray, byeArray){
   this.petCardMe = petCardMe;
   this.petCardNew = petCardNew;
   this.helloArray = helloArray;
   this.byeArray = byeArray;
-  console.log(this);
 }
 
 var Dog1;//Jan28 ANTHONY: helloArray & byeArray are global, and contain Dog1, Dog2 variables. These variables will get actual pet name string values inside interaction page.
