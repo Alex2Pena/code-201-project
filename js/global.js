@@ -3,25 +3,25 @@
 var myProfile = JSON.parse(localStorage.getItem(String(currentUser)));
 
 var Profile = function (username, password, email) {
-    this.username = username;
-    this.password = password;
-    this.email = email;
-    this.petCards = [];
-}
+  this.username = username;
+  this.password = password;
+  this.email = email;
+  this.petCards = [];
+};
 
 function getProfileDataFromStorage(username) {
-    var profileDataString = localStorage.getItem(username);
-    if (profileDataString) {
-        var profileData = JSON.parse(profileDataString);
-        myProfile = profileData;
-    }
+  var profileDataString = localStorage.getItem(username);
+  if (profileDataString) {
+    var profileData = JSON.parse(profileDataString);
+    myProfile = profileData;
+  }
 }
 
 function updateProfileDataInStorage() {
-    if (myProfile.username) {
-        var stringData = JSON.stringify(myProfile);
-        localStorage.setItem(myProfile.username, stringData);
-    }
+  if (myProfile.username) {
+    var stringData = JSON.stringify(myProfile);
+    localStorage.setItem(myProfile.username, stringData);
+  }
 }
 
 var Dog1;//Jan28 ANTHONY: helloArray & byeArray are global, and contain Dog1, Dog2 variables. These variables will get actual pet name string values inside interaction page.
@@ -31,48 +31,49 @@ var byeArrayTotals = [['What a pleasure is was to meet with you.', 'We should do
 var createInteraction = document.getElementsByTagName[1];//JAN28 ANTHONY: DOCUMENT TAG FOR EVENT LISTENER
 createInteraction.addEventListener('click', generateInteraction);//JAN28 ANTHONY: EVENT LISTNER TO GENERATE INTERACTION DETAILS FOR INTERACTION PAGE
 var generateInteraction = function (petCardType) {//JAN28 ANTHONY: petCardType can be set to random, or a specific card from your collection
-    var chosenHelloArray = randomHelloArray();//select random helloArray
-    var chosenByeArray = randomByeArray();//select random byeArray
-    var petCardMe = myProfile.petCards[0];
-    var PetCardNew;
-    if (petCardType === 'random') {
-        PetCardNew = randomPetCard();//JAN28 ANTHONY: selecting random pet card
-    } else {//JAN28 ANTHONY: selecting pet card from collection
-        for (var i = 0; i < localStorage.length; i++) {
-            for (var ii = 0; ii < localStorage[i].petCards.length; ii++) {//JAN28 ANTHONY: possible users have multiple pets, so loop thru all possible pets in local storage
-                if (petCardType === localStorage[i].petCards[ii].name) {
-                    PetCardNew = localStorage[i].petCards[ii];//JAN28 ANTHONY: selecting specified pet card from collection name
-                }
-            }
+  var chosenHelloArray = randomHelloArray();//select random helloArray
+  var chosenByeArray = randomByeArray();//select random byeArray
+  var petCardMe = myProfile.petCards[0];
+  var PetCardNew;
+  if (petCardType === 'random') {
+    PetCardNew = randomPetCard();//JAN28 ANTHONY: selecting random pet card
+  } else {//JAN28 ANTHONY: selecting pet card from collection
+    for (var i = 0; i < localStorage.length; i++) {
+      for (var ii = 0; ii < localStorage[i].petCards.length; ii++) {//JAN28 ANTHONY: possible users have multiple pets, so loop thru all possible pets in local storage
+        if (petCardType === localStorage[i].petCards[ii].name) {
+          PetCardNew = localStorage[i].petCards[ii];//JAN28 ANTHONY: selecting specified pet card from collection name
         }
+      }
     }
-    InteractionCreator(petCardMe, PetCardNew, chosenHelloArray, chosenByeArray);
-}
+  }
+  InteractionCreator(petCardMe, PetCardNew, chosenHelloArray, chosenByeArray);
+};
 
 var randomPetCard = function () {
-    // var petCounter = 0;//JAN28 ANTHONY: COUNTER TO SHOW HOW MANY PETS ARE AVAILBLE**
-    var newPetOwner;
-    var newPetCard;
-    // for (var i = 0; i < localStorage.length; i++) {
-    //     petCounter += localStorage.getItem[i].petCards.length;//JAN28 ANTHONY: COUNTER TO SHOW HOW MANY PETS ARE AVAILBLE**
-    // }
-    var availbleProfiles = 0;
-    availbleProfiles = localeStorage.length;
-    do (
-        newPetOwner = Math.floor(Math.random() * availbleProfiles);
-    ) while (JSON.parse(localStorage.getItem(newPetOwner).username) != myProfile.username)
-    
-        var petCounter = localStorage.getItem(newPetOwner).petCards.length;
-    newPetCard = Math.floor(Math.random()*petCounter);
-    return JSON.parse(localStorage.getItem(newPetOwner)).petCards[newPetCard]);
-}
+  // var petCounter = 0;//JAN28 ANTHONY: COUNTER TO SHOW HOW MANY PETS ARE AVAILBLE**
+  var newPetOwner;
+  var newPetCard;
+  // for (var i = 0; i < localStorage.length; i++) {
+  //     petCounter += localStorage.getItem[i].petCards.length;//JAN28 ANTHONY: COUNTER TO SHOW HOW MANY PETS ARE AVAILBLE**
+  // }
+  var availbleProfiles = 0;
+  availbleProfiles = localeStorage.length;
+  do {
+    newPetOwner = Math.floor(Math.random() * availbleProfiles);
+  }
+  while (JSON.parse(localStorage.getItem(newPetOwner).username) !== myProfile.username);
+
+  var petCounter = localStorage.getItem(newPetOwner).petCards.length;
+  newPetCard = Math.floor(Math.random()*petCounter);
+  return JSON.parse(localStorage.getItem(newPetOwner)).petCards[newPetCard];
+};
 
 var randomHelloArray = function () {
-    var hello = helloArrayTotals.length;
-    return Math.floor(Math.random() * hello);
-}
+  var hello = helloArrayTotals.length;
+  return Math.floor(Math.random() * hello);
+};
 
 var randomByeArray = function () {
-    var goodbye = byeArrayTotals.length;
-    return Math.floor(Math.random() * goodbye);
-}
+  var goodbye = byeArrayTotals.length;
+  return Math.floor(Math.random() * goodbye);
+};
