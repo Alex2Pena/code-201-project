@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
 body{
     background-image: url(/img/stockphotos/sky.jpg);
+}
+#mainLogo{
+    padding-top: 10px;
+    width: 80px;
 }
 nav{
     position: relative;
@@ -11,8 +18,8 @@ header{
 }
 main{
     position: relative;
-    height: 800px;
-    padding: 200px;
+    height: 400px;
+
 }
 section{
     position: relative;
@@ -22,12 +29,12 @@ li{
     list-style-type: none;
     float: right;
     font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin-right: 20px;
 }
 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5em;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
     position: relative;
     float: left;
     margin: 0px;
@@ -41,12 +48,20 @@ h1{
 }
 #frame{
     position: relative;
-    height: 800px;
+    height: auto;
+    margin: 0px;
+    padding-top: 0px;
+    width: 1900px;
+    padding-left: 150px;
+
 }
 #aboutus{
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     z-index: 1;
     padding: 130px;
-    font
+}
+
+#aboutus {
+    padding-left: 500px;
 }
