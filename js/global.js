@@ -37,9 +37,10 @@ var Dog1;//Jan28 ANTHONY: helloArray & byeArray are global, and contain Dog1, Do
 var Dog2;//Jan28 ANTHONY: helloArray & byeArray are global, and contain Dog1, Dog2 variables. These variables will get actual pet name string values inside interaction page.
 var helloArrayTotals = [['Say what you feel and be who you are.', 'Why is that ' + Dog1 + '?', 'Because those who mind don\'t matter and those who matter don\'t mind.'], []];
 var byeArrayTotals = [['What a pleasure is was to meet with you.', 'We should do this again soon. Bye!'], []];
-var createInteraction = document.getElementsByTagName('a')[1];//JAN28 ANTHONY: DOCUMENT TAG FOR EVENT LISTENER
+var createInteraction = document.getElementsByTagName('a')[0];//JAN28 ANTHONY: DOCUMENT TAG FOR EVENT LISTENER
 createInteraction.addEventListener('click', generateInteraction);//JAN28 ANTHONY: EVENT LISTNER TO GENERATE INTERACTION DETAILS FOR INTERACTION PAGE
 var generateInteraction = function (petCardType) {//JAN28 ANTHONY: petCardType can be set to random, or a specific card from your collection
+  console.log("/./././././")
   var chosenHelloArray = randomHelloArray();//select random helloArray
   var chosenByeArray = randomByeArray();//select random byeArray
   var petCardMe = myProfile.petCards[0];
@@ -66,7 +67,7 @@ var randomPetCard = function () {
   //     petCounter += localStorage.getItem[i].petCards.length;//JAN28 ANTHONY: COUNTER TO SHOW HOW MANY PETS ARE AVAILBLE**
   // }
   var availbleProfiles = 0;
-  availbleProfiles = localeStorage.length;
+  availbleProfiles = localStorage.length;
   do {
     newPetOwner = Math.floor(Math.random() * availbleProfiles);
   }

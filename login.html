@@ -25,29 +25,41 @@
         </nav>
     </header>
     <main>
-        
-            <div class="container1">
-                <label for="uname"><b></b></label>
+        <form id="existingProfileCheck">
+            <fieldset><!--JAN28 ANTHONY: COMMENTED BELOW WHAT CARRINGTON BUILT, RECREATED WITHOUT CHECK BUTTON-->
+                <legend>
+                    <h3></h3>
+                </legend>
+                    <label>Username</label>
+                        <input id="nameOne" type="text" placeholder="Enter Username" name="uname" minlength="1" maxlength="15" required>
+                    <label>Password</label>
+                        <input id="pwordOne" type="password" placeholder="Enter Password" name="psw" minlength="1" maxlength="15" required>
+                    <button id="submit">Login <img src="img/stockphotos/paw.png"></button>            
+            </fieldset><!--JAN28 ANTHONY: COMMENTED BELOW WHAT CARRINGTON BUILT, RECREATED WITHOUT CHECK BUTTON-->
+
+
+        <!-- <form action="profile.html" method="post" class="mainCont"> -->
+
+            <!-- <div class="container1">
+                <label for="uname"><b>Username</b></label>
+
                 <input id="nameOne" type="text" placeholder="Enter Username" name="uname" required>
 
                 <label for="psw"><b></b></label>
                 <input id="pwordOne" type="password" placeholder="Enter Password" name="psw" required>
 
-                <button id="loginButton" type="submit"><a href="profile.html">Login</a><img src="/img/stockphotos/paw.png"></button>
-                
-            </div>
-            <div>
-                <img id="pep" src="img/pep.jpg">
-                <img id="pep2" src="img/pep2.jpg">
-            </div>
-            <div class="container2">
+
+                <button id="submitbtn" type="submit">Login <img src="img/stockphotos/paw.png"></button>
+                <label>
+                    <input id="loginButton" type="checkbox" checked="checked" name="remember"> Remember Me
+                </label>
+            </div> -->
+            
+            <!-- <div class="container2">
                 <button id="submitbtn" type="button" class="cancelbtn">Cancel<img src="img/stockphotos/paw.png"></button>
-                <br>
-                <button id="submitbtn" type="submit"><a href="signup.html">Create Profile</a><img src="img/stockphotos/paw.png"></button>
-                
-            </div>
-        
-        
+                <span class="psw">Forgot<a href="#"> password?</a></span>
+            </div> -->
+        </form>
     </main>
     
     <footer>
