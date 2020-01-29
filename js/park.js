@@ -1,23 +1,103 @@
-// //global declarations//
-// var speech = [];
-// var action = [];
+// generateInteraction();
 
-// //Random Number Generator//
-// function randomItem(){
-//   var randomNumber = Math.floor(Math.random() * speech.length);
-//   return randomNumber;
-// }
-// var leftBubble = document.getElementById('lBubble');
+// var petCardContainer = document.getElementById('userDog');
+// var petCard = document.createElement('div');
+
+// var petCardData = myProfile.petCards[0]; // Get petCard data from list of petCards in myProfile
+
+// // var petCard = document.createElement('div'); // Create petCard element to hold all petCard content
+
+// var petCardName = document.createElement('h3'); // Get petCard name and attach to petCard
+// petCardName.textContent = petCardData.name;
+// petCard.appendChild(petCardName);
+
+// var petCardImageBox = document.createElement('img'); // Get petCard image and attach to petCard
+// petCardImageBox.src = petCardData.image;
+// petCard.appendChild(petCardImageBox);
 
 
-// click on the left bubble
-// leftBubble.addEventListener('onclick', function(event) {
+// var petCardTextBox = document.createElement('section'); // Create text box to hold all petCard text
+// petCard.appendChild(petCardTextBox);
 
-// },
-// This handler will be executed only once when the cursor
-// function InteractionCreator(petCardMe, PetCardNew, helloArray,byeArray){
-//   this.petCardMe = petCardMe;
-//   this.PetCardNew = PetCardNew;
-//   this.helloArray = helloArray;
-//   this.byeArray = byeArray;
-// }
+// var petCardStatList = document.createElement('ul'); // Create list to have all petCard stats
+// petCardStatList.textContent = '';
+// petCardTextBox.appendChild(petCardStatList);
+
+
+// // All 6 petCard stats defined and added to list
+// var petCardTextGoodDog = document.createElement('li');
+// petCardTextGoodDog.textContent = `Good Dog: ${petCardData.goodDog}`;
+// var petCardTextFloofiness = document.createElement('li');
+// petCardTextFloofiness.textContent = `Floofiness: ${petCardData.floofiness}`;
+// var petCardTextEnergy = document.createElement('li');
+// petCardTextEnergy.textContent = `Energy: ${petCardData.energy}`;
+// var petCardTextSnuggles = document.createElement('li');
+// petCardTextSnuggles.textContent = `Snuggles: ${petCardData.snuggles}`;
+// var petCardTextAppetite = document.createElement('li');
+// petCardTextAppetite.textContent = `Appetite: ${petCardData.appetite}`;
+// var petCardTextBravery = document.createElement('li');
+// petCardTextBravery.textContent = `Bravery: ${petCardData.bravery}`;
+// petCardStatList.appendChild(petCardTextGoodDog);
+// petCardStatList.appendChild(petCardTextFloofiness);
+// petCardStatList.appendChild(petCardTextEnergy);
+// petCardStatList.appendChild(petCardTextSnuggles);
+// petCardStatList.appendChild(petCardTextAppetite);
+// petCardStatList.appendChild(petCardTextBravery);
+// petCardContainer.appendChild(petCard);
+
+
+
+//--------------------------------------------------------------------------//
+
+var interactionObject = generateInteraction('random');
+console.log(interactionObject);
+// cardMaker(Interaction.userName, Interaction.random);
+
+function cardMaker(){
+
+}
+
+
+
+// var petCardContainer = document.getElementById('guestDog');
+// var petCard = document.createElement('div');
+
+// var petCardData = Dog2; // Get petCard data from list of petCards in myProfile
+
+// // var petCard = document.createElement('div'); // Create petCard element to hold all petCard content
+
+// var petCardName = document.createElement('h3'); // Get petCard name and attach to petCard
+// petCardName.textContent = petCardData.name;
+// petCard.appendChild(petCardName);
+
+// var petCardImageBox = document.createElement('img'); // Get petCard image and attach to petCard
+// petCardImageBox.src = petCardData.image;
+// petCard.appendChild(petCardImageBox);
+
+// var petCardTextBox = document.createElement('section'); // Create text box to hold all petCard text
+// petCard.appendChild(petCardTextBox);
+
+// var petCardStatList = document.createElement('ul'); // Create list to have all petCard stats
+// petCardStatList.textContent = '';
+// petCardTextBox.appendChild(petCardStatList);
+
+// // All 6 petCard stats defined and added to list
+// var petCardTextGoodDog = document.createElement('li');
+// petCardTextGoodDog.textContent = `Good Dog: ${petCardData.goodDog}`;
+// var petCardTextFloofiness = document.createElement('li');
+// petCardTextFloofiness.textContent = `Floofiness: ${petCardData.floofiness}`;
+// var petCardTextEnergy = document.createElement('li');
+// petCardTextEnergy.textContent = `Energy: ${petCardData.energy}`;
+// var petCardTextSnuggles = document.createElement('li');
+// petCardTextSnuggles.textContent = `Snuggles: ${petCardData.snuggles}`;
+// var petCardTextAppetite = document.createElement('li');
+// petCardTextAppetite.textContent = `Appetite: ${petCardData.appetite}`;
+// var petCardTextBravery = document.createElement('li');
+// petCardTextBravery.textContent = `Bravery: ${petCardData.bravery}`;
+// petCardStatList.appendChild(petCardTextGoodDog);
+// petCardStatList.appendChild(petCardTextFloofiness);
+// petCardStatList.appendChild(petCardTextEnergy);
+// petCardStatList.appendChild(petCardTextSnuggles);
+// petCardStatList.appendChild(petCardTextAppetite);
+// petCardStatList.appendChild(petCardTextBravery);
+// petCardContainer.appendChild(petCard);

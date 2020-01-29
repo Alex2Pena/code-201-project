@@ -83,6 +83,7 @@ var randomPetCard = function () {
 
   petCardIndex = Math.floor(Math.random() * allPetCards.length);
   petCard = allPetCards[petCardIndex];
+  Dog2 = petCard;
   return petCard;
 };
 
