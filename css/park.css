@@ -36,7 +36,7 @@ li{
 h1{
     font-family: 'Bebas Neue', cursive;
     font-size: 4em;
-    position: fixed;
+    position: relative;
     float: left;
     margin: 0px;
     padding-left: 15px;
