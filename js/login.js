@@ -27,3 +27,4 @@ function populateLocal(){
     localStorage.setItem('currentUser', currentUser)
 };
 
+populateLocal();

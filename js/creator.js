@@ -3,8 +3,6 @@
 var petCardForm = document.getElementById('petCardForm');
 petCardForm.addEventListener('submit', handlePetCardFormSubmit);
 
-
-
 var PetCard = function (name, image, sex, age, birthday, owner, dateCollected, dateCreated, goodDog, floofiness, energy, snuggles, appetite, bravery){
   this.name = name;
   this.image = image;
@@ -40,12 +38,9 @@ function handlePetCardFormSubmit(event){
 
   // Check if the inputted name already exists on a petCard on this profile
   var nameMatch = false;
-  console.log(myProfile.petCards.length);
   for(var i=0; i< myProfile.petCards.length; i++){
     var newName = name.toLowerCase();
     var storedName = myProfile.petCards[i].name.toLowerCase();
-    console.log(newName);
-    console.log(storedName);
     if(newName===storedName) {
       nameMatch = true;
       break;
@@ -61,16 +56,6 @@ function handlePetCardFormSubmit(event){
       goodDog,floofiness,energy,snuggles,appetite,bravery);
     myProfile.petCards.push(myPetCard);
     updateProfileDataInStorage();
-  }
-  // If a name match is not found, ok to create a new petCard
-  if (nameMatch===false) {
-    var currentDate = new Date();
-    var myPetCard = new PetCard(name,'', 'male', 2, 'November 4, 2018', myProfile.username, currentDate, currentDate, 0,0,0,0,0,0);
-    myProfile.petCards.push(myPetCard);
-    // TODO: Move update of local storage to separate function in global js
-    updateProfileDataInStorage();
-  } else {
-    alert('Oh no! Your profile already includes a pet with that name. You can edit the existing pet or delete it and make a new one. Or, you could make a new version of your pet with a different name. Either way is fine :)');
   }
 }
 
