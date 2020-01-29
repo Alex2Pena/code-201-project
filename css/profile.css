@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
 body{
     margin: 0;
@@ -19,7 +21,7 @@ nav{
     
 }
 header{
-    height: 130px;
+    height: 60px;
 }
 
 nav li{
@@ -70,57 +72,86 @@ h1{
     margin-right: 20px;
 }
 
-h2 {
-    display: block;
-    /* clear: left; */
-}
 
 #petCardsOwned {
     height: 500px;
     margin: 50px;
+
+}
+
+h2{
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
 }
 
 #petCardsOwned h3 {
-    margin: 5px;
+    margin: 0px;
+    font-family: 'Boogaloo', cursive;
+    font-size: 40px;
+    color: rgba(2, 38, 105, 0.733);
 }
 
-#petCardsOwned img{
+#petCardsOwnedList img{
     width: 200px;
     margin: 0px 25px;
     border-radius: 15px;
 }
 
+h2 img{
+    width: 30px;
+}
+#paw{
+    width:30px;
+}
+
 #petCardsOwned div{
     float:left;
-    height: 400px;
+    height: 450px;
     width: 250px;
     margin: 20px;
     background-color: whitesmoke;
     border-radius: 15px;
     padding: 15px;
+    background-image: url(/img/bone.png);
+    text-align: center;
+    box-shadow: 10px 5px 5px rgb(139, 139, 139);
+    
 }
-
+#petCardsOwned div ul{
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    color: rgba(41, 27, 1, 0.692);
+}
 #collection {
-    height: 600px;
     margin: 50px;
 }
 
 #collection h3 {
     margin: 5px;
+    font-size: 30px;
+    font-family: 'Boogaloo', cursive;
+    text-align: center;
+    color: rgba(2, 38, 105, 0.733);
 }
 
-#collection img{
+#collectionList img{
     width: 100px;
     margin: 0px 25px;
     border-radius: 15px;
 }
 
+
 #collection div{
     float:left;
-    height: 125px;
-    width: 125px;
+    height: 150px;
+    width: 145px;
     margin: 10px;
-    background-color: lightblue;
+    margin-top: 0px;
+    background-color: rgb(199, 233, 155);
     border-radius: 15px;
     padding: 15px;
+    background-image: url(/img/bone.png);
+    box-shadow: 10px 5px 5px rgb(139, 139, 139);
+
 }
