@@ -23,7 +23,7 @@ function renderPetCards() {
       petCard.appendChild(petCardTextBox);
       
       var petCardStatList = document.createElement('ul'); // Create list to have all petCard stats
-      petCardStatList.textContent = 'Dog Stats:';
+      petCardStatList.textContent = '';
       petCardTextBox.appendChild(petCardStatList);
 
       // All 6 petCard stats defined and added to list
