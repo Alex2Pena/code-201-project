@@ -18,6 +18,8 @@ var PetCard = function (name, image, sex, age, birthday, owner, dateCollected, d
   this.snuggles = snuggles;
   this.appetite = appetite;
   this.bravery = bravery;
+  allPetCards.push(this);
+  myProfile.petCards.push(this);
 };
 
 function handlePetCardFormSubmit(event){
@@ -52,7 +54,6 @@ function handlePetCardFormSubmit(event){
     var currentDate = new Date();
     var myPetCard = new PetCard(name, image, sex, age, birthday, myProfile.username, currentDate, currentDate,
       goodDog,floofiness,energy,snuggles,appetite,bravery);
-    myProfile.petCards.push(myPetCard);
     updateProfileDataInStorage();
   }
 }

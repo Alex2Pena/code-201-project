@@ -12,9 +12,7 @@ function handleSubmit(event) {
   var email = event.target.email.value;
 
   myProfile = new Profile(username, password, email);
-  var stringify = JSON.stringify(myProfile);
-  localStorage.setItem(username, stringify);
-  localStorage.setItem('currentUser', stringify);
+  updateProfileDataInStorage();
 }
 
 // var checker = localStorage.getItem(username);
@@ -23,4 +21,3 @@ function handleSubmit(event) {
 // if(username === dataCheck){
 //   alert('Username is taken. Try again');
 // }
- 
