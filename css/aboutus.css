@@ -60,3 +60,16 @@ h1{
     float: right;
     margin-right: 20px;
 }
+#frame{
+    height: 710px;
+    position: absolute;
+    margin-left: 480px;
+    bottom: 110px;
+}
+#aboutus{
+    position: fixed;
+    margin-left: 32%;
+    margin-right: 33%;
+    margin-top: 7%;
+    font-family: 'Montserrat', sans-serif;
+}

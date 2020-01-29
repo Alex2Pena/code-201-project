@@ -9,28 +9,61 @@
     <title>Dogs IRL</title>
 </head>
 <body>
+    <div id="bg">
+        <img src="img/stockphotos/Background.png" alt="">
+    </div>
     <header>
-        <h1>Dogs IRL</h1>
+        <h1>Dogs IRL <img id="mainLogo" src="img/main.png"></h1>
         <nav>
-            <ul id=navLinks>
-                <img src="img/stockphotos/paw.png" alt="paw pic">
-                <li><a href=aboutus.html>About Us</a></li>
-                <img src="img/stockphotos/paw.png" alt="paw pic">
-                <li><a href="creator.html">Add dog</a></li>
-                <img src="img/stockphotos/paw.png" alt="paw pic">
-                <li><a href="park.html">The Park</a></li>
-                <img src="img/stockphotos/paw.png" alt="paw pic">
-                <li><a href="profile.html">Profile</a></li>
+            <ul id="navLinks">
+                <li><a href="aboutus.html">About Us</a></li>
+                <img id="topPaw" src="img/stockphotos/paw.png" alt="paw pic">
+                <li><a href="login.html">Log In</a></li>
+                <img class="topPaw" src="img/stockphotos/paw.png" alt="paw pic">
             </ul>
         </nav>
     </header>
     <main>
-        
+        <form id="signUp1">
+            <fieldset>
+                <label>Username:</label>
+                <input name ="nameOne" type="text" placeholder="Enter username*">
+                <br>
+                <label>Create Password:</label>
+                <input name ="pwordOne" type="password"placeholder="Enter new password*">
+                <br>
+                <label>Email:</label>
+                <input name="email" type="text" placeholder="Enter Email*">
+                <br>
+                <br>
+                <button onclick="window.location.href = 'creator.html';"-- id="signUp"> Sign Up! <img src="img/stockphotos/paw.png"></button>
+              </fieldset>
+        </form>
+        <div>
+            <img id="gustav" src="img/gustav.jpg">
+            <img id="ginger" src="img/Ginger.jpg">
+            <img id="tucker" src="img/Tucker.jpg">
+            <img id="maus" src="img/maus.png">
+            <img id="logo1" src="img/logo.png">
+            <img id="logo2" src="img/logo.png">
+            <img id="logo3" src="img/logo.png">
+        </div>
+        <div>
+            <img id="habana" src="img/habana.jpeg">
+            <p id="habanaP">This is Habana. She loves cuddles, treats and string cheese! <br/> She is energetic and sometimes forgot that she is a big puppy.
+                <br/>She is a heavy napper and of course, snores a lot! She would love to be your friend!</p> <br/>
+            <img id="smokey" src="img/smokey.png">
+            <p id="smokeyP">Say hi to Smokey! He loves going on hikes, dog park and play with other puppies.<br/> His favorite spot is Alki Beach.
+                He prefer sleeping in bed with parents and can snuggle all night!</p><br>
+            <img id="tofu" src="img/tofu.png">
+            <p id="tofuP">Tofu might be quite, but loves to play fetch! He loves to play all day long<br/> and but hates to shower.
+            He does not bark, but he does, it is because he is very happy!</p><br>
+        </div>
     </main>
     
     <footer>
-        <img id="grass" src="/img/stockphotos/park.png" alt="grass footer image">
     </footer>
-    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
 </body>
 </html>
