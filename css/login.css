@@ -76,6 +76,7 @@ input[type=text], input[type=password] {
   .container2{
     width: 450px;
     margin: auto;
+    text-align: center;
 }
 .mainCont{
     margin-top: 100px;
@@ -86,7 +87,11 @@ input{
     border-radius: 20px;
     background-color: rgb(200, 232, 243);
 }
+
 #submitbtn:hover{
+    background-color: pink;
+}
+#loginButton:hover{
     background-color: pink;
 }
 
