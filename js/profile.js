@@ -79,3 +79,9 @@ for ( var i = 0; i<myProfile.petCards.length; i++){
 addDropDownOptions();
 renderProfile();
 
+document.getElementById('logout').addEventListener('click', logout);
+
+function logout(){
+  localStorage.removeItem('currentUser')
+  window.location.href = 'login.html';
+}
