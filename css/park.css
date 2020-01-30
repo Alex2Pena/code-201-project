@@ -81,6 +81,7 @@ button#logout{
     margin-top: 30px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 button img{
