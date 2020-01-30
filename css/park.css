@@ -55,6 +55,7 @@ h1{
     position: fixed;
     bottom: 0;
     left: 0px;
+    z-index: -1;
 }
 #navLinks img{
     height: 20px;
