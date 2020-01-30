@@ -49,6 +49,13 @@
 
 //--------------------------------------------------------------------------//
 
+
+function loginWall(){
+  if (!myProfile.username)
+  window.location.href = 'login.html'
+};
+ loginWall();
+
 var interactionObject = generateInteraction('random');
 // cardMaker(Interaction.userName, Interaction.random);
 console.log(interactionObject.petCardMe);

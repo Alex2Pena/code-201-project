@@ -1,5 +1,11 @@
 'use strict';
 
+function loginWall(){
+  if (!myProfile.username)
+  window.location.href = 'login.html'
+};
+loginWall();
+
 var petCardForm = document.getElementById('petCardForm');
 petCardForm.addEventListener('submit', handlePetCardFormSubmit);
 
