@@ -160,4 +160,5 @@ button img{
     border-radius: 40%;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
+    cursor: pointer;
 }

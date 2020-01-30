@@ -1,5 +1,11 @@
 'use strict'
 
+function loginWall(){
+  if (!myProfile.username)
+  window.location.href = 'login.html'
+};
+loginWall();
+
 function renderPetCards() {
   var petCardsOwnedList = document.getElementById('petCardsOwnedList');
   var collectionList = document.getElementById('collectionList');
