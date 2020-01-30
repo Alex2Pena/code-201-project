@@ -5,7 +5,6 @@
 body{
     margin: 0;
     background-image: url(/img/stockphotos/sky.jpg)
-
 }
 #mainLogo{
     padding-top: 10px;
@@ -15,12 +14,10 @@ nav{
     position: relative;
     margin-top: 0px;
     float: right;
-    
 }
 header{
     height: 130px;
 }
-
 li{
     position: relative;
     list-style-type: none;
@@ -32,7 +29,6 @@ li{
     font-family: 'Roboto Condensed', sans-serif;
     margin-right: 20px;
 }
-
 h1{
     font-family: 'Bebas Neue', cursive;
     font-size: 4em;
