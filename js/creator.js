@@ -71,4 +71,7 @@ function logout(){
   window.location.href = 'login.html';
 }
 
+function moveLogin(){
+  window.location.href = 'profile.html'
+}
 
