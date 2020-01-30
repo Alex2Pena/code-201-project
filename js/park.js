@@ -49,10 +49,17 @@
 
 //--------------------------------------------------------------------------//
 
+
+function loginWall(){
+  if (!myProfile.username)
+  window.location.href = 'login.html'
+};
+ loginWall();
+
 var interactionObject = generateInteraction('random');
 // cardMaker(Interaction.userName, Interaction.random);
-console.log(interactionObject.petCardMe);
-console.log(interactionObject.petCardNew);
+// console.log(interactionObject);
+// console.log(interactionObject.petCardNew);
 cardMaker(interactionObject.petCardMe);
 cardMaker(interactionObject.petCardNew);
 renderInteraction();
@@ -112,13 +119,41 @@ function cardMaker(petCard){
 }
 // interactionID = 'userChat';
 function renderInteraction(){
-  var petInteractContainer = document.getElementById('userChat');
-  var petInteractionLocation = document.createElement('ul');
-  var petInteractionItem = document.createElement('li');
+  var petInteractContainer = document.getElementById('textField');
 
-  petInteractionItem.textContent = interactionObject.helloArray[0];
-  petInteractionLocation.appendChild(petInteractionItem);
-  petInteractionItem.textContent = interactionObject.helloArray[2];
-  petInteractionLocation.appendChild(petInteractionItem);
+
+  var petInteractionLocation = document.createElement('ul');
+
+
+  var petInteraction1 = document.createElement('li');
+  petInteraction1.textContent = interactionObject.helloArray[0];
+  petInteractionLocation.appendChild(petInteraction1);
+
+  var petInteraction2 = document.createElement('li'); //guest
+  petInteraction2.setAttribute('class', 'guestInteraction');
+  petInteraction2.textContent = interactionObject.helloArray[1];
+  petInteractionLocation.appendChild(petInteraction2);
+
+  var petInteraction3 = document.createElement('li');
+  petInteraction3.textContent = interactionObject.helloArray[2];
+  petInteractionLocation.appendChild(petInteraction3);
+
+  var petInteraction4 = document.createElement('li'); //guest
+  petInteraction4.setAttribute('class', 'guestInteraction');
+  petInteraction4.textContent = interactionObject.byeArray[0];
+  petInteractionLocation.appendChild(petInteraction4);
+
+  var petInteraction5 = document.createElement('li');
+  petInteraction5.textContent = interactionObject.byeArray[1];
+  petInteractionLocation.appendChild(petInteraction5);
+
   petInteractContainer.appendChild(petInteractionLocation);
+  petInteractContainer.appendChild(petInteractionLocation);
+}
+
+document.getElementById('logout').addEventListener('click', logout);
+
+function logout(){
+  localStorage.removeItem('currentUser')
+  window.location.href = 'login.html';
 }

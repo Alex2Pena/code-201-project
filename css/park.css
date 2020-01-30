@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
 body{
     margin: 0;
     background-image: url(/img/stockphotos/sky.jpg)
-
 }
 #mainLogo{
     padding-top: 10px;
@@ -15,13 +15,11 @@ nav{
     position: relative;
     margin-top: 0px;
     float: right;
-    
 }
 header{
     height: 130px;
 }
-
-li{
+nav li{
     position: relative;
     list-style-type: none;
     /* display: inline-block; */
@@ -32,7 +30,6 @@ li{
     font-family: 'Roboto Condensed', sans-serif;
     margin-right: 20px;
 }
-
 h1{
     font-family: 'Bebas Neue', cursive;
     font-size: 4em;
@@ -59,6 +56,7 @@ h1{
     position: fixed;
     bottom: 0;
     left: 0px;
+    z-index: -1;
 }
 #navLinks img{
     height: 20px;
@@ -68,25 +66,88 @@ h1{
     margin-right: 20px;
 }
 
-#userDog {
-    float:left;
-    text-align: center;
-    margin: auto;
-    padding: auto;
-    width: 400px;
-    font-size: 24px;
-}
-#guestDog{
-    float:right;
-    text-align: center;
-    margin: auto;
-    padding: auto;
-    width: 400px;
-    font-size: 24px;
-}
 #userDog{
 width: 200px;
 }
 #guestDog{
 width: 200px;
+}
+
+button#logout{
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+    position: relative;
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button img{
+    width: 20px;
+    height: 20px;
+}
+h2 img{
+    width: 300px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
+}
+
+#guestDog{
+    position: absolute;
+    top: 100px;
+    right: 150px;
+}
+#userDog ul{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+#guestDog ul{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.guestInteraction{
+    text-align: right;
+
+}
+#textField{
+    width: 1000px;
+    margin: auto;
+    margin-top: 400px;
+    font-size: 25px;
+    line-height: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#textField li{
+    list-style: none;
+}
+
+h2#userDog{
+    position: absolute;
+    left: 50px;
+    top:100px;
+}
+h2{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+#divider{
+    position: absolute;
+    width: 900px;
+    height: 450px;
+    top: 450px;
+    right: 600px;
+    z-index: 999999;
 }

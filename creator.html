@@ -11,13 +11,14 @@
 <body>
     <header>
         <h1>Dogs IRL <img id="mainLogo" src="img/main.png"></h1>
+        <button id="logout">Logout <img src="img/stockphotos/paw.png"></button>
         <nav>
             <ul id=navLinks>
                 <img src="img/stockphotos/paw.png" alt="paw pic">
                 <li><a href=aboutus.html>About Us</a></li>
                 <img src="img/stockphotos/paw.png" alt="paw pic">
-                <li><a href="creator.html">Add dog</a></li>
-                <img src="img/stockphotos/paw.png" alt="paw pic">
+                <!-- <li><a href="creator.html">Add dog</a></li>
+                <img src="img/stockphotos/paw.png" alt="paw pic"> -->
                 <li><a href="park.html">The Park</a></li>
                 <img src="img/stockphotos/paw.png" alt="paw pic">
                 <li><a href="profile.html">Profile</a></li>
@@ -40,9 +41,6 @@
             <label>How old is your pup?</label>
             <input name="age" type="number">
             <fieldset>
-                <label>
-                    <button id="logout">Logout<img src="img/stockphotos/paw.png"></button>
-                </label>
                 <label>Bad dog</label><input name="goodDog" type="range" min="0" max="10" value="10"><label>GOOD PUP</label><br>
                 <label>Wiry</label><input name="floofiness" type="range" min="0" max="10" value="5"><label>Floofy</label><br>
                 <label>Lazy bones</label><input name="energy" type="range" min="0" max="10" value="5"><label>Ball of energy</label><br>
@@ -50,7 +48,7 @@
                 <label>Very picky</label><input name="appetite" type="range" min="0" max="10" value="5"><label>Will eat anything</label><br>
                 <label>Total coward</label><input name="bravery" type="range" min="0" max="10" value="5"><label>Fears nothing</label><br>
             </fieldset>
-            <button id=submitPet type="submit">Create New Pet Card!</button>
+            <button id=submitPet type="submit" onclick='moveLogin()'>Create New Pet Card!</button>
         </form>
         <div>
             <img id="pug" src="img/pug.jpg">
