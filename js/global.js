@@ -73,14 +73,17 @@ function Interaction(petCardMe, petCardNew, helloArray, byeArray) {
 
 var createInteraction = document.getElementsByTagName('a')[0];//JAN28 ANTHONY: DOCUMENT TAG FOR EVENT LISTENER
 createInteraction.addEventListener('click', generateInteraction);//JAN28 ANTHONY: EVENT LISTNER TO GENERATE INTERACTION DETAILS FOR INTERACTION PAGE
-var generateInteraction = function (interactionType, Dog1, Dog2) {//JAN28 ANTHONY: petCardType can be set to random, or a specific card from your collection
+var generateInteraction = function (interactionType) {//JAN28 ANTHONY: petCardType can be set to random, or a specific card from your collection
   // console.log('/./././././');
 
-  if(!myProfile.selectedPet){
-    if (myProfile.petCards){
+  if(!myProfile.selectedPet[0]){
+    // console.log(myProfile.selectedPet[0]);
+    if (myProfile.petCards[0]){
       myProfile.selectedPet = myProfile.petCards[0];
+      // console.log(myProfile.selectedPet);
     } else {
       alert('You have no pups! Go to add dog to create a furry friend.');
+      window.location.href = 'creator.html';
       return {};
     }
   }
@@ -138,7 +141,7 @@ var randomHelloArray = function (Dog1, Dog2) {
     [Dog1 + ' sees a cloud in the sky that looks like a cat.', 'Meanwhile, ' + Dog2 + ' leaps forward and says, "do you see what I see?"', '"You don\'t like giant cats either?" And then jumps up, after ' + Dog2 + '... "Squirrel!"'],
     ['With great balance, ' + Dog1 + ', sits and focuses on the ball about to be thrown.', 'Meanwhile, ' + Dog2 + ', can hardly hold still.', 'In one giant leap, ' + Dog1 + ' catches the ball mid air, mid flight.'],
     [Dog1 + ' thinks and wonders.', Dog2 + ' wonders and thinks', Dog1 + ' thinks that as soon as things start happening, they\'ll start happening, too.'],
-    [Dog1 + ' frollucks aver the grassy field. And has never been more happy.', Dog2 + ' stews in the great moment. Today is ' + Dog1 + '\'s day.', Dog1 + ' looks back at ' + Dog2 + ' and thinks outloud, ' + Dog2 + ' is a-okay!']
+    [Dog1 + ' frollucks over the grassy field. And has never been more happy.', Dog2 + ' stews in the great moment. Today is ' + Dog1 + '\'s day.', Dog1 + ' looks back at ' + Dog2 + ' and thinks outloud, ' + Dog2 + ' is A-okay!']
   ];
   var hello = helloArrayTotals.length;
   var x = Math.floor(Math.random() * hello);
