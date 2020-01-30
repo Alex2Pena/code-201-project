@@ -58,8 +58,8 @@ function loginWall(){
 
 var interactionObject = generateInteraction('random');
 // cardMaker(Interaction.userName, Interaction.random);
-console.log(interactionObject.petCardMe);
-console.log(interactionObject.petCardNew);
+// console.log(interactionObject);
+// console.log(interactionObject.petCardNew);
 cardMaker(interactionObject.petCardMe);
 cardMaker(interactionObject.petCardNew);
 renderInteraction();
