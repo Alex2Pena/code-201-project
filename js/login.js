@@ -1,5 +1,7 @@
 var formSelector = document.getElementById('existingProfileCheck');//JAN28 ANTHONY: ADDING EVENT LISTENER TO LOGIN FORM
 formSelector.addEventListener('submit', check);
+// var signUpRedirect = document.getElementById('signUp');
+// signUpRedirect.addEventListener('signUp', redirect)
 
 allProfiles = JSON.parse(localStorage.getItem('allProfiles'));
 var j;
@@ -31,6 +33,9 @@ function check() {
     alert('Incorrect username or password.');
   }
 }
+function redirect(){
+  window.location.href = 'signup.html'
+};
 
 function populateLocal(){
 //    var userName = document.getElementById('nameOne').value;

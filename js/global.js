@@ -162,4 +162,6 @@ var randomByeArray = function () {
   return byeArrayTotals[y];
 };
 
+
+
 initialize();
