@@ -170,13 +170,3 @@ button img{
     width: 20px;
     height: 20px;
 }
-
-button#logout{
-    width: 150px;
-    height: 45px;
-    font-size: 20px;
-    position: relative;
-    margin-top: 30px;
-    background-color: transparent;
-    border: none;
-}
