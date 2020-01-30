@@ -55,32 +55,35 @@ console.log(interactionObject.petCardMe);
 console.log(interactionObject.petCardNew);
 cardMaker(interactionObject.petCardMe);
 cardMaker(interactionObject.petCardNew);
+renderInteraction();
 
 
 function cardMaker(petCard){
   var elementID;
+  //   var interactionID;
 
   if (petCard.owner === myProfile.username){
     elementID = 'userDog';
     console.log(elementID);
   }else{
     elementID = 'guestDog';
+    interactionID = 'guestChat';
     console.log(elementID);
   }
 
   var petCardContainer = document.getElementById(elementID);// Dependent of if ststement from function cardMaker if statement.
-  var petCard = document.createElement('div'); // Create petCard element to hold all petCard content
+  var petCardLocation = document.createElement('div'); // Create petCard element to hold all petCard content
 
   var petCardName = document.createElement('h3'); // Get petCard name and attach to petCard
   petCardName.textContent = petCard.name;
-  petCard.appendChild(petCardName);
+  petCardLocation.appendChild(petCardName);
 
   var petCardImageBox = document.createElement('img'); // Get petCard image and attach to petCard
   petCardImageBox.src = petCard.image;
-  petCard.appendChild(petCardImageBox);
+  petCardLocation.appendChild(petCardImageBox);
 
   var petCardTextBox = document.createElement('section'); // Create text box to hold all petCard text
-  petCard.appendChild(petCardTextBox);
+  petCardLocation.appendChild(petCardTextBox);
 
   var petCardStatList = document.createElement('ul'); // Create list to have all petCard stats
   petCardStatList.textContent = '';
@@ -105,5 +108,17 @@ function cardMaker(petCard){
   petCardStatList.appendChild(petCardTextSnuggles);
   petCardStatList.appendChild(petCardTextAppetite);
   petCardStatList.appendChild(petCardTextBravery);
-  petCardContainer.appendChild(petCard);
+  petCardContainer.appendChild(petCardLocation);
+}
+// interactionID = 'userChat';
+function renderInteraction(){
+  var petInteractContainer = document.getElementById('userChat');
+  var petInteractionLocation = document.createElement('ul');
+  var petInteractionItem = document.createElement('li');
+
+  petInteractionItem.textContent = interactionObject.helloArray[0];
+  petInteractionLocation.appendChild(petInteractionItem);
+  petInteractionItem.textContent = interactionObject.helloArray[2];
+  petInteractionLocation.appendChild(petInteractionItem);
+  petInteractContainer.appendChild(petInteractionLocation);
 }

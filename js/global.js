@@ -91,13 +91,15 @@ var generateInteraction = function (interactionType) {//JAN28 ANTHONY: petCardTy
   return newInteraction;
 };
 
-var randomPetCard = function () {
+var randomPetCard = function() {
   var petCard = {};
   var petCardIndex = 0;
+  do{
 
-  petCardIndex = Math.floor(Math.random() * allPetCards.length);
-  petCard = allPetCards[petCardIndex];
-  Dog2 = petCard;
+    petCardIndex = Math.floor(Math.random() * allPetCards.length);
+    petCard = allPetCards[petCardIndex];
+    Dog2 = petCard;
+  }while(petCard.owner === myProfile.username);
   return petCard;
 };
 
