@@ -72,8 +72,36 @@ function Interaction(petCardMe, petCardNew, helloArray, byeArray){
 
 var Dog1;//Jan28 ANTHONY: helloArray & byeArray are global, and contain Dog1, Dog2 variables. These variables will get actual pet name string values inside interaction page.
 var Dog2;//Jan28 ANTHONY: helloArray & byeArray are global, and contain Dog1, Dog2 variables. These variables will get actual pet name string values inside interaction page.
-var helloArrayTotals = [['Say what you feel and be who you are.', 'Why is that ' + Dog1 + '?', 'Because those who mind don\'t matter and those who matter don\'t mind.']];
-var byeArrayTotals = [['What a pleasure is was to meet with you.', 'We should do this again soon. Bye!']];
+var helloArrayTotals = [['Say what you feel and be who you are.', 'Why is that ' + Dog1 + '?', 'Because those who mind don\'t matter and those who matter don\'t mind.'],
+  ['Good morning, friend, what\'d you have for breakfast today?', 'Eggs and bacon. What about you ?', 'That\'s sounds like a healthy meal for a dog. I had just dog food, which is good enough for me.'],
+  ['What are you up to today, ' + Dog2, 'Just snooping around the park. What\'s up with you?', 'West coast living, walking without a leash mostly.'],
+  ['Hello there, aren\'t you looking more fluffy than usual.New haircut ?', 'That\'s right, I like to keep it looking fresh.You got to, ya know ' + Dog1 + '?', 'Cool. Well that\'s just all right.'],
+  ['The weather forcast shows chance of showers. How\'s that fare, ' + Dog2 + '?', 'Well that works great for me. I heard that wet dog smell\'s coming back.', 'That\'s what\'s up. Wet dog style\'s coming back!'],
+  ['I\'m glad I\'m a dog.', 'Me, too, ' + Dog1 + '. ' + Dog2 + ' wags their tail.', Dog1 + ' wags their tail, too.'],
+  ['I wonder if we are brave.', 'We sure look dog\'gone brave, ' + Dog1, 'Yes, I know, ' + Dog2 + '... but are we?'],
+  ['This whole park is covered in bushes and trees.', 'That\'s right, ' + Dog1 + '. And not one of them is mine.', 'Well I do think that one is mine now.'],
+  ['You are in pretty good shape.', 'I guess, for the shape I\'m in.', 'Never sell yourself short, ' + Dog2],
+  []
+
+
+
+
+],
+
+
+
+
+
+
+
+
+
+
+
+
+
+];
+var byeArrayTotals = [['What a pleasure it was to meet with you.', 'We should do this again soon. Bye!']];
 var createInteraction = document.getElementsByTagName('a')[0];//JAN28 ANTHONY: DOCUMENT TAG FOR EVENT LISTENER
 createInteraction.addEventListener('click', generateInteraction);//JAN28 ANTHONY: EVENT LISTNER TO GENERATE INTERACTION DETAILS FOR INTERACTION PAGE
 var generateInteraction = function (interactionType) {//JAN28 ANTHONY: petCardType can be set to random, or a specific card from your collection
