@@ -49,6 +49,13 @@
 
 //--------------------------------------------------------------------------//
 
+
+function loginWall(){
+  if (!myProfile.username)
+  window.location.href = 'login.html'
+};
+ loginWall();
+
 var interactionObject = generateInteraction('random');
 // cardMaker(Interaction.userName, Interaction.random);
 console.log(interactionObject.petCardMe);
@@ -142,4 +149,11 @@ function renderInteraction(){
 
   petInteractContainer.appendChild(petInteractionLocation);
   petInteractContainer.appendChild(petInteractionLocation);
+}
+
+document.getElementById('logout').addEventListener('click', logout);
+
+function logout(){
+  localStorage.removeItem('currentUser')
+  window.location.href = 'login.html';
 }

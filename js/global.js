@@ -169,4 +169,6 @@ var randomByeArray = function (Dog1, Dog2) {
   return byeArrayTotals[y];
 };
 
+
+
 initialize();
