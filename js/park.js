@@ -120,5 +120,11 @@ function renderInteraction(){
   petInteractionLocation.appendChild(petInteractionItem);
   petInteractionItem.textContent = interactionObject.helloArray[2];
   petInteractionLocation.appendChild(petInteractionItem);
+  petInteractionItem.textContent = interactionObject.helloArray[1];
+  petInteractionLocation.appendChild(petInteractionItem);
+  petInteractionItem.textContent = interactionObject.byeArray[0];
+  petInteractionLocation.appendChild(petInteractionItem);
+  petInteractionItem.textContent = interactionObject.byeArray[1];
+  petInteractionLocation.appendChild(petInteractionItem);
   petInteractContainer.appendChild(petInteractionLocation);
 }
