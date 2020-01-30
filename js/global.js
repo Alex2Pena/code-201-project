@@ -103,20 +103,22 @@ var helloArrayTotals = [['Say what you feel and be who you are.', 'Why is that '
 [Dog1 + ' frollucks aver the grassy field. And has never been more happy.', Dog2 + ' stews in the great moment. Today is ' + Dog1 + '\'s day.', Dog1 + ' looks back at ' + Dog2 + ' and thinks outloud, ' + Dog2 + ' is a-okay!']
 ];
 var byeArrayTotals = [['What a pleasure it was to meet with you.', 'We should do this again soon. Bye!'],
-  ['Well its nice to meet with you, I had so much fun.', 'Maybe I\'ll see you around the park.Chao!']
-
-
-
-
-
-
-
-
-
-
-
-
-
+  ['Well its nice to meet with you, I had so much fun.', 'Maybe I\'ll see you around the park.Chao!'],
+  ['I\'m glad you\'re doing well. Take good care of yourself.', 'See you next time, ' + Dog1 + '.'], 
+  ['What a pleasure is was to meet with you.', 'Let\'s do this again soon. Bye!'],
+  ['When we come back to the park, it\'d be great to see you again.', 'Awesome, possum. ' + Dog1 + 'That sounds swell.'],
+  ['Playing with you is as good as it gets.', 'Thanks, ' + Dog2 + ', I enjoyed our time, too. Tata!'],
+  ['There\'s no other way to put it. ' + Dog1 + ', you are a great friend.', 'Thanks, ' + Dog2 + '! I sure do like you, too.'],
+  ['Even when you\'re down, know that I\'ll be around.', 'That\'s great.Know, you\'ve got a friend in me, too.'],
+  ['I like you better than dog food, but not chicken casserole.', 'That\'s so nice.Thanks, ' + Dog2 + '. Chicken casserole\'s the best.'],
+  ['I think we are quite the pair, me and you, ' + Dog1 + '.', 'Its funny you say that. I was thinking the same thing. Bye!'],
+  ['We\'ve got to get going. I\'ve had so much fun.', 'Same here, ' + Dog1 + '. And more to come. See you around!'],
+  ['Well, let\'s do this again some time.', 'That\'d be great, ' + Dog1 + '. I\'d love to be your friend.'],
+  ['Take it from me pal, you\'ve been swell.', 'See you around next time. Tata for now.'],
+  ['Do you think we can do this again sometime?', 'I\'ll tell you what, next time I\'m at the park I\'ll bark your way.'],
+  ['Any chance at seeing you around again?', 'If you need me, I\'ll come running.Chao!'],
+  ['This has been a memorable day.','Great to spend it with you. See ya next time.'],
+  ['Okie dokie artichokie. I\'ve got to get going, ' + Dog1 + '.' , 'You are awesome. I\'m looking forward to seeing you next time.']
 ];
 var createInteraction = document.getElementsByTagName('a')[0];//JAN28 ANTHONY: DOCUMENT TAG FOR EVENT LISTENER
 createInteraction.addEventListener('click', generateInteraction);//JAN28 ANTHONY: EVENT LISTNER TO GENERATE INTERACTION DETAILS FOR INTERACTION PAGE
