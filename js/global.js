@@ -1,5 +1,12 @@
 'use strict';
 
+function loginWall(){
+  if (!myProfile.username)
+  window.location.href = 'login.html'
+};
+
+
+
 var myProfile = {};
 var allProfiles = [];
 var allPetCards = [];
@@ -162,4 +169,7 @@ var randomByeArray = function () {
   return byeArrayTotals[y];
 };
 
+
+
 initialize();
+
