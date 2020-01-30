@@ -1,57 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
 body{
-    margin: 0;
-    background-image: url(/img/stockphotos/sky.jpg)
-
+    background-image: url(/img/dog-photos.png);
+}
+#mainLogo{
+    padding-top: 10px;
+    width: 80px;
 }
 nav{
     position: relative;
-    margin-top: 0px;
     float: right;
-    
 }
 header{
     height: 130px;
 }
+main{
+    position: relative;
+    height: 400px;
 
+}
+section{
+    position: relative;
+}
 li{
     position: relative;
     list-style-type: none;
-    display: inline-block;
     float: right;
-    padding-left: 0px;
-    padding-right: 20px;
     font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin-right: 20px;
 }
-
 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5em;
-    position: fixed;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
+    position: relative;
     float: left;
     margin: 0px;
-    padding-left: 15px;
-    padding-top: 0px;
-    display: inline-block;
-}
-.container{
-    padding-left: 50%;
-    padding-top: 5%;
-}
-.main{
-    color: seashell;
-}
-#sky{
-    width: 100%;
-    position: fixed;
-    bottom: 0;}
-#grass{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0px;
 }
 #navLinks img{
     height: 20px;
@@ -60,16 +46,18 @@ h1{
     float: right;
     margin-right: 20px;
 }
-#frame{
-    height: 710px;
-    position: absolute;
-    margin-left: 480px;
-    bottom: 110px;
-}
+
 #aboutus{
-    position: fixed;
-    margin-left: 32%;
-    margin-right: 33%;
-    margin-top: 7%;
     font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    z-index: 1;
+    padding: 130px;
+}
+
+#aboutus {
+    padding-left: 600px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
 }

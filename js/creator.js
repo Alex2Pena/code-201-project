@@ -18,12 +18,12 @@ var PetCard = function (name, image, sex, age, birthday, owner, dateCollected, d
   this.snuggles = snuggles;
   this.appetite = appetite;
   this.bravery = bravery;
+  allPetCards.push(this);
+  myProfile.petCards.push(this);
 };
 
 function handlePetCardFormSubmit(event){
   event.preventDefault();
-  // var inputs = event.target.getElementsByTagName('input');
-  // var name = inputs[0].value;
   var name = event.target.petName.value;
   var image = event.target.image.value;
   var sex = event.target.sex.value;
@@ -52,13 +52,17 @@ function handlePetCardFormSubmit(event){
     alert('Oh no! Your profile already includes a pet with that name. You can edit the existing pet or delete it and make a new one. Or, you could make a new version of your pet with a different name. Either way is fine :)');
   } else {
     var currentDate = new Date();
-    var myPetCard = new PetCard(name,image, sex, age, birthday, myProfile.username, currentDate, currentDate,
+    var myPetCard = new PetCard(name, image, sex, age, birthday, myProfile.username, currentDate, currentDate,
       goodDog,floofiness,energy,snuggles,appetite,bravery);
-    myProfile.petCards.push(myPetCard);
     updateProfileDataInStorage();
   }
 }
 
+document.getElementById('logout').addEventListener('click', logout);
 
+function logout(){
+  localStorage.removeItem('currentUser')
+  window.location.href = 'login.html';
+}
 
 

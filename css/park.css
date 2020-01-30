@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
 body{
     margin: 0;
     background-image: url(/img/stockphotos/sky.jpg)
 
+}
+#mainLogo{
+    padding-top: 10px;
+    width: 80px;
 }
 nav{
     position: relative;
@@ -22,14 +29,14 @@ li{
     padding-left: 0px;
     padding-right: 20px;
     font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin-right: 20px;
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5em;
-    position: fixed;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
+    position: relative;
     float: left;
     margin: 0px;
     padding-left: 15px;
@@ -47,7 +54,7 @@ h1{
     width: 100%;
     position: fixed;
     bottom: 0;}
-#grass{
+#fence{
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -60,29 +67,7 @@ h1{
     float: right;
     margin-right: 20px;
 }
-#fences{
-    position: absolute;
-    display: inline-block;
-    bottom: 0;
-    width: 400px;
-}
-#fence1{
-    height: 518px;
-    float: left;
-    /* display: inline-block; */
-    position: relative;
-    margin-left: 0;
-    z-index: -3;
-    
-}
-#fence2{
-    height: 518px;
-    float: right;
-    /* display: inline-block; */
-    position: fixed;
-    margin-right: 0;
-    z-index: -3;
-}
+
 #userDog {
     float:left;
     text-align: center;
@@ -98,4 +83,10 @@ h1{
     padding: auto;
     width: 400px;
     font-size: 24px;
+}
+#userDog{
+width: 200px;
+}
+#guestDog{
+width: 200px;
 }

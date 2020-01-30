@@ -1,88 +1,119 @@
 'use strict';
 
-var myProfile = JSON.parse(localStorage.getItem('currentUser'));
+var myProfile = {};
+var allProfiles = [];
+var allPetCards = [];
 
+function initialize () {
+  if (JSON.parse(localStorage.getItem('currentUser'))){
+    myProfile = JSON.parse(localStorage.getItem('currentUser'));
+  }
+  if (JSON.parse(localStorage.getItem('allProfiles'))){
+    allProfiles = JSON.parse(localStorage.getItem('allProfiles'));
+  }
+  if (JSON.parse(localStorage.getItem('allPetCards'))){
+    allPetCards = JSON.parse(localStorage.getItem('allPetCards'));
+  }
+}
+//Constructor Function for creating profiles//
 var Profile = function (username, password, email) {
   this.username = username;
   this.password = password;
   this.email = email;
   this.petCards = [];
+  allProfiles.push(this);
+  console.log(allProfiles);
 };
-
+//Loads profile file associated with individual user name & loads all profile data to currents browser session//
 function getProfileDataFromStorage(username) {
-  var profileDataString = localStorage.getItem(username);
-  if (profileDataString) {
-    var profileData = JSON.parse(profileDataString);
-    myProfile = profileData;
+  var allProfilesDataString = localStorage.getItem('allProfiles');
+  if (allProfilesDataString) {
+    var allProfileData = JSON.parse(allProfilesDataString);
+    for(var i=0; i<allProfileData.length; i++){
+      if (allProfileData[i].username === username){
+        allProfiles = allProfileData;
+        myProfile = allProfileData[i];
+        return allProfileData[i];
+      }
+    }
   }
 }
-
+//Updates and stringifies profile data into LOCAL STORAGE//
 function updateProfileDataInStorage() {
+
   if (myProfile.username) {
-    var stringData = JSON.stringify(myProfile);
-    localStorage.setItem(myProfile.username, stringData);
-    localStorage.setItem('currentUser', stringData);
+    var myProfileDataString = JSON.stringify(myProfile);
+    updateAllProfilesFromMyProfile();
+    var allProfilesDataString = JSON.stringify(allProfiles);
+    var allPetCardsDataString = JSON.stringify(allPetCards);
+    localStorage.setItem('currentUser', myProfileDataString);
+    localStorage.setItem('allProfiles', allProfilesDataString);
+    localStorage.setItem('allPetCards', allPetCardsDataString);
   }
 }
 
-function InteractionCreator(petCardMe, PetCardNew, helloArray, byeArray){
+function updateAllProfilesFromMyProfile (){
+  if(myProfile){
+    for (var i = 0; i< allProfiles.length; i++){
+      if(allProfiles[i].username === myProfile.username){
+        allProfiles[i] = myProfile;
+      }
+    }
+  }
+}
+
+//Creates the interaction content and random petCard//
+function Interaction(petCardMe, petCardNew, helloArray, byeArray){
   this.petCardMe = petCardMe;
-  this.PetCardNew = PetCardNew;
+  this.petCardNew = petCardNew;
   this.helloArray = helloArray;
   this.byeArray = byeArray;
-  console.log(this);
 }
 
 var Dog1;//Jan28 ANTHONY: helloArray & byeArray are global, and contain Dog1, Dog2 variables. These variables will get actual pet name string values inside interaction page.
 var Dog2;//Jan28 ANTHONY: helloArray & byeArray are global, and contain Dog1, Dog2 variables. These variables will get actual pet name string values inside interaction page.
-var helloArrayTotals = [['Say what you feel and be who you are.', 'Why is that ' + Dog1 + '?', 'Because those who mind don\'t matter and those who matter don\'t mind.'], []];
-var byeArrayTotals = [['What a pleasure is was to meet with you.', 'We should do this again soon. Bye!'], []];
-var createInteraction = document.getElementsByTagName('a')[1];//JAN28 ANTHONY: DOCUMENT TAG FOR EVENT LISTENER
+var helloArrayTotals = [['Say what you feel and be who you are.', 'Why is that ' + Dog1 + '?', 'Because those who mind don\'t matter and those who matter don\'t mind.']];
+var byeArrayTotals = [['What a pleasure is was to meet with you.', 'We should do this again soon. Bye!']];
+var createInteraction = document.getElementsByTagName('a')[0];//JAN28 ANTHONY: DOCUMENT TAG FOR EVENT LISTENER
 createInteraction.addEventListener('click', generateInteraction);//JAN28 ANTHONY: EVENT LISTNER TO GENERATE INTERACTION DETAILS FOR INTERACTION PAGE
-var generateInteraction = function (petCardType) {//JAN28 ANTHONY: petCardType can be set to random, or a specific card from your collection
+var generateInteraction = function (interactionType) {//JAN28 ANTHONY: petCardType can be set to random, or a specific card from your collection
+  // console.log('/./././././');
   var chosenHelloArray = randomHelloArray();//select random helloArray
+  // console.log(chosenHelloArray);
   var chosenByeArray = randomByeArray();//select random byeArray
   var petCardMe = myProfile.petCards[0];
-  var PetCardNew;
-  if (petCardType === 'random') {
-    PetCardNew = randomPetCard();//JAN28 ANTHONY: selecting random pet card
-  } else {//JAN28 ANTHONY: selecting pet card from collection
-    for (var i = 0; i < localStorage.length; i++) {
-      for (var ii = 0; ii < localStorage[i].petCards.length; ii++) {//JAN28 ANTHONY: possible users have multiple pets, so loop thru all possible pets in local storage
-        if (petCardType === localStorage[i].petCards[ii].name) {
-          PetCardNew = localStorage[i].petCards[ii];//JAN28 ANTHONY: selecting specified pet card from collection name
-        }
-      }
-    }
+  // console.log(chosenByeArray);
+  var petCardNew = {};
+  if (interactionType === 'random') {
+    petCardNew = randomPetCard();//JAN28 ANTHONY: selecting random pet card
   }
-  InteractionCreator(petCardMe, PetCardNew, chosenHelloArray, chosenByeArray);
+  var newInteraction = new Interaction(petCardMe, petCardNew, chosenHelloArray, chosenByeArray);
+  return newInteraction;
 };
 
-var randomPetCard = function () {
-  // var petCounter = 0;//JAN28 ANTHONY: COUNTER TO SHOW HOW MANY PETS ARE AVAILBLE**
-  var newPetOwner;
-  var newPetCard;
-  // for (var i = 0; i < localStorage.length; i++) {
-  //     petCounter += localStorage.getItem[i].petCards.length;//JAN28 ANTHONY: COUNTER TO SHOW HOW MANY PETS ARE AVAILBLE**
-  // }
-  var availbleProfiles = 0;
-  availbleProfiles = localeStorage.length;
-  do {
-    newPetOwner = Math.floor(Math.random() * availbleProfiles);
-  }
-  while (JSON.parse(localStorage.getItem(newPetOwner).username) !== myProfile.username);
+var randomPetCard = function() {
+  var petCard = {};
+  var petCardIndex = 0;
+  do{
 
-  var petCounter = localStorage.getItem(newPetOwner).petCards.length;
-  newPetCard = Math.floor(Math.random()*petCounter);
-  return JSON.parse(localStorage.getItem(newPetOwner)).petCards[newPetCard];
+    petCardIndex = Math.floor(Math.random() * allPetCards.length);
+    petCard = allPetCards[petCardIndex];
+    Dog2 = petCard;
+  }while(petCard.owner === myProfile.username);
+  return petCard;
 };
+
 
 var randomHelloArray = function () {
   var hello = helloArrayTotals.length;
-  return Math.floor(Math.random() * hello);
+  var x = Math.floor(Math.random() * hello);
+  return helloArrayTotals[x];
 };
 
 var randomByeArray = function () {
   var goodbye = byeArrayTotals.length;
-  return Math.floor(Math.random() * goodbye);
+  var y = Math.floor(Math.random() * goodbye);
+  return byeArrayTotals[y];
 };
+
+initialize();

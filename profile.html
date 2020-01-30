@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>Dogs IRL</h1>
+        <h1>Dogs IRL <img id="mainLogo" src="img/main.png"></h1>
         <nav>
             <ul id=navLinks>
                 <img src="img/stockphotos/paw.png" alt="paw pic">
@@ -25,18 +25,30 @@
         </nav>
     </header>
     <main>
-        <div class=profile>
-            <img id=profilePic src="img/tofu.png" alt="image of dog">
+        <fieldset>
+            <label>
+                <button id="logout">Logout<img src="img/stockphotos/paw.png"></button>
+            </label>
+        </fieldset>
+        <div id=petCardsOwned>
+            <h2><img id="home" src="img/home.png"> Your Doggos:</h2>
+            <ul id=petCardsOwnedList></ul>
+        </div> <br>
+        <label for="pet-select">Choose a pet:</label>
+                <select name="pets" id="petCardDrop">
+            
+                </select>
+        <div id=collection>
+            <h2><img id="paw" src="img/paw.png"> Collected Doggos:</h2>
+            <ul id=collectionList>
+            </ul>
         </div>
-        <section class=collection>
-            <table id="my-table"></table>
-        </section>
     </main>
     
     <footer>
-        <img id="grass" src="/img/stockphotos/park.png" alt="grass footer image">
+        <img id="grass" src="/img/stockphotos/landscape.png" alt="grass footer image">
     </footer>
     <script type="text/javascript" src="js/global.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
 </body>
 </html>

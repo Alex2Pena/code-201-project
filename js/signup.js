@@ -12,15 +12,7 @@ function handleSubmit(event) {
   var email = event.target.email.value;
 
   myProfile = new Profile(username, password, email);
-  var stringify = JSON.stringify(myProfile);
-  localStorage.setItem(username, stringify);
-  localStorage.setItem('currentUser', stringify);
+  console.log(myProfile);
+  updateProfileDataInStorage();
 }
 
-// var checker = localStorage.getItem(username);
-// var dataCheck = JSON.parse(checker);
-
-// if(username === dataCheck){
-//   alert('Username is taken. Try again');
-// }
- 
