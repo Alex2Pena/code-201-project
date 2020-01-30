@@ -73,8 +73,8 @@ fieldset{
     width: 500px;
     position: absolute;
     height: 200px;
-    top: 400px;
-    left: 700px;
+    top: 350px;
+    right: 850px;
     text-align: center ;
     border-radius: 40%;
     border-width: 4px;
@@ -161,4 +161,11 @@ button img{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
     cursor: pointer;
+}
+
+#combo{
+    position: absolute;
+    bottom: 100px;
+    right: 650px;
+    width: 800px;
 }
