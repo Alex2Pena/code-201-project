@@ -81,6 +81,18 @@ var helloArrayTotals = [['Say what you feel and be who you are.', 'Why is that '
   ['I wonder if we are brave.', 'We sure look dog\'gone brave, ' + Dog1, 'Yes, I know, ' + Dog2 + '... but are we?'],
   ['This whole park is covered in bushes and trees.', 'That\'s right, ' + Dog1 + '. And not one of them is mine.', 'Well I do think that one is mine now.'],
   ['You are in pretty good shape.', 'I guess, for the shape I\'m in.', 'Never sell yourself short, ' + Dog2],
+  ['It feels opener here in the park.', 'I\'d say so, ' + Dog1 + ' I\'d bark to that.', 'Isn\'t it great, to be in the wide open air ?'],
+  ['Today was good and well.', 'Today was dandy and fun.', 'Tomorrow\'s going to be another one.'],
+  ['Is there a place for us in this world?', 'You mean like this dog park?', 'That\'s good enough for me, if that\'s good enough for you.'],
+  [Dog1 + ' sits, lays down, rolls over.', Dog2 + ' barks, "Bark", and lays down too.', Dog1 + ' barks back: "Bark".'],
+  ['With the sun high in they sky, ' + Dog1 + ' looks up and relives his favorite summertime memories.', Dog2 + ' patiently waits for the right time to speak up... everything okay, ' + Dog1 + '?', 'Couldn\'t be better.Wag more, bark less, ya know ?'],
+  [Dog1 + ' smells around the tall grass for something brand new.', Dog2 + ' thinks they can smell it, too.', Dog1 + ' finds what ' + Dog2 + ' thought they smelt.'],
+  ['All the dogs in the park are running after a squirel that\'s far too fast.', Dog2 + ' waits for ' + Dog1 + ' to join in.', Dog1 + ' waits for ' + Dog2 + ' to make their move.'],
+  [Dog1 + ' thinks ' + Dog2 + ' has a great amount of fluff going on today.', Dog2 + ' sees a mud puddle and jumps in.', Dog1 + ' jumps in and joins in on the fun.'],
+  [Dog1 + ' is asked to sit and stay.', Dog2 + ' overhears the command and knows what\'s coming. ' + Dog2 + ' sits and stays first.', Dog1 + ' sits and stays, too, and everyone gets treats.'], 
+  [Dog1 + ' wonders if ' + Dog2 + ' wants to snuggle buggle.', Dog2 + ' appreciates that ' + Dog1 + ' has asked politely, and gives a big hug.', 'A big hug from ' + Dog2 + ' has made ' + Dog1 + '\'s day.Snuggle buddies!'],
+  [Dog1 + ' sees a bald eagle in the sky, and hears its piercing squak.', Dog2 + ' wonders what its like to fly like that bird in the sky.', Dog1 + ' says, "Look, the bird of our nation"'],
+  ['All the money in the world couldn\'t keep ' + Dog1 + ' away from chasing the squirrel around the park.', Dog2 + ' hasn\'t an ounce of will power and chases the critter.', 'Even though the squirrel is far too fast for any dog to catch, ' +  Dog1 + ' joins ' + Dog2 + ' in the chase.'],
   []
 
 
