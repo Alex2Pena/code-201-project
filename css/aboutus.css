@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
 body{
+    margin: 0;
     background-image: url(/img/dog-photos.png);
+    z-index: -2;
 }
 #mainLogo{
     padding-top: 10px;
@@ -38,6 +40,7 @@ h1{
     position: relative;
     float: left;
     margin: 0px;
+    padding-left: 15px;
 }
 #navLinks img{
     height: 20px;
