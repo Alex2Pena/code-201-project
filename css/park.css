@@ -69,20 +69,18 @@ h1{
 }
 
 #userDog {
-    float:left;
-    text-align: center;
-    margin: auto;
-    padding: auto;
-    width: 400px;
-    font-size: 24px;
+    width: 300px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
 }
 #guestDog{
-    float:right;
-    text-align: center;
-    margin: auto;
-    padding: auto;
-    width: 400px;
-    font-size: 24px;
+    width: 300px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #ffffff;
+    background-color:rgb(255, 255, 255);
 }
 #userDog{
 width: 200px;
