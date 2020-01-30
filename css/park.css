@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
 body{
     margin: 0;
@@ -99,11 +100,18 @@ h2 img{
     right: 150px;
 }
 #userDog ul{
+    list-style: none;
     font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
 }
 
 #guestDog ul{
+    list-style: none;
     font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin-left: 50px;
 }
 
 .guestInteraction{
@@ -126,4 +134,18 @@ h2#userDog{
     position: absolute;
     left: 50px;
     top:100px;
+}
+h2{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+#divider{
+    position: absolute;
+    width: 900px;
+    height: 450px;
+    top: 450px;
+    right: 600px;
+    z-index: 999999;
 }
