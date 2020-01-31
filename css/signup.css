@@ -33,8 +33,9 @@ nav{
     position: relative;
     margin-top: 0px;
     float: right;
-    
+    font-size: 20px;
 }
+
 header{
     height: 130px;
 }
@@ -82,7 +83,7 @@ h1{
     z-index: 0;
 }
 #navLinks img{
-    height: 20px;
+    height: 40px;
     display: inline-block;
     position: relative;
     float: right;
@@ -93,7 +94,7 @@ form{
     float: left;
     width: 600px;
     padding-left: 250px;
-    padding-top: 100px;
+    padding-top: 200px;
     margin-right: 200px;
     line-height: 40px;
     text-align: center;
@@ -147,52 +148,6 @@ button img{
     float: center;
 }
 
-#ginger{
-    width: 300px;
-    border-radius: 50%;
-    padding: 2px;
-    border:1px solid #ffffff;
-    background-color:rgb(255, 255, 255);
-    position: absolute;
-    top: 200px;
-    right:300px;
-
-}
-
-#tucker{
-    width: 300px;
-    border-radius: 50%;
-    padding: 2px;
-    border:1px solid #ffffff;
-    background-color:rgb(255, 255, 255);
-    position: absolute;
-    top: 200px;
-    right: 550px
-}
-#gustav{
-    width: 300px;
-    border-radius: 50%;
-    padding: 2px;
-    border:1px solid #ffffff;
-    background-color:rgb(255, 255, 255);
-    position: absolute;
-    top: 200px;
-    right: 800px;
-
-}
-
-#maus{
-    width: 300px;
-    border-radius: 50%;
-    padding: 2px;
-    border:1px solid #ffffff;
-    background-color:rgb(255, 255, 255);
-    position: absolute;
-    top: 200px;
-    right: 50px;
-
-}
-
 #habana {
     width: 200px;
     border-radius: 50%;
@@ -200,16 +155,16 @@ button img{
     border:1px solid #ffffff;
     background-color:rgb(255, 255, 255);
     position: absolute;
-    right:150px;
-    top: 1100px;
+    right: 300px;
+    top: 1200px;
 
 }
 
 #habanaP{
     position: absolute;
     font-family: 'Montserrat', sans-serif;
-    right: 400px;
-    top: 1120px;
+    right: 550px;
+    top: 1220px;
     text-align: right;
     font-size: 30px;
 }
@@ -221,15 +176,15 @@ button img{
     border:1px solid #ffffff;
     background-color:rgb(255, 255, 255);
     position: absolute;
-    top: 1275px;
-    left: 150px;
+    top: 1400px;
+    left: 300px;
 }
 
 #smokeyP{
     position: absolute;
     font-family: 'Montserrat', sans-serif;
-    left: 400px;
-    top: 1300px;
+    left: 540px;
+    top: 1450px;
     text-align: center;
     text-align: left;
     font-size: 30px;
@@ -243,18 +198,26 @@ button img{
     padding: 2px;
     border:1px solid #ffffff;
     background-color:rgb(255, 255, 255);
-    right:150px;
+    right:300px;
     position: absolute;
-    top: 1400px;
+    top: 1600px;
 }
 
 #tofuP{
     position: absolute;
     font-family: 'Montserrat', sans-serif;
-    right: 400px;
-    top: 1420px;
+    right: 550px;
+    top: 1650px;
     text-align: center;
     text-align: right;
     font-size: 30px;
 }
 
+#combo{
+    position: relative;
+    float: right;
+    width: 1100px;
+    margin: 0;
+    padding-right: 200px;
+    padding-top: 200px;
+}

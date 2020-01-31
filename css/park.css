@@ -15,6 +15,7 @@ nav{
     position: relative;
     margin-top: 0px;
     float: right;
+    font-size: 20px;
 }
 header{
     height: 130px;
@@ -59,7 +60,7 @@ h1{
     z-index: -1;
 }
 #navLinks img{
-    height: 20px;
+    height: 40px;
     /* display: inline-block; */
     position: relative;
     float: right;
@@ -74,14 +75,24 @@ width: 200px;
 }
 
 button#logout{
-    width: 150px;
+    width: 200px;
     height: 45px;
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
     margin-top: 30px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+#logout{
+    position:fixed;
+    right: 10px;
+    top: 5px;
+    width: 100px;
+    height: 50px;
+    border-radius: 40%;
+    font-size: 20px;
+
 }
 
 button img{
@@ -103,17 +114,17 @@ h2 img{
 }
 #userDog ul{
     list-style: none;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
 
 #guestDog ul{
     list-style: none;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .guestInteraction{
@@ -123,8 +134,8 @@ h2 img{
 #textField{
     width: 1000px;
     margin: auto;
-    margin-top: 400px;
-    font-size: 25px;
+    margin-top: 420px;
+    font-size: 30px;
     line-height: 50px;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -144,10 +155,14 @@ h2{
 }
 
 #divider{
-    position: absolute;
+    /* position: absolute;
     width: 900px;
     height: 450px;
     top: 450px;
-    right: 600px;
-    z-index: 999999;
+    right: 725px;
+    z-index: 999999; */
+    margin-left: 850px;
+    margin-top: 300px;
+    z-index: 3;
+    position: fixed;
 }
