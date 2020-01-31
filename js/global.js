@@ -111,7 +111,7 @@ var generateInteraction = function (interactionType) {//JAN28 ANTHONY: petCardTy
       // myProfile.selectedPet = myProfile.petCards[0];// ABC JAN30: If the user hasn't selected a pet and they have at least one pet, default to their first pet
     } else {
       alert('You have no pups! Go to add dog to create a furry friend.');// ABC JAN30: If the user hasn't selected a pet and they don't have any pets, alert them and send them to the creator page
-      window.location.href = 'creator.html';
+      window.location.href = '/code-201-project/creator.html';
       return;
     }
   }
