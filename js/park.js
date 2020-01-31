@@ -9,7 +9,7 @@ loginWall();
 var interactionObject = generateInteraction('random');
 checkInteraction();
 
-function checkInteraction (){
+function checkInteraction (){// ABC JAN30: Handles if there is an invalid interaction for any reason.
   if (!interactionObject.petCardNew){
     alert('You have met every dog at the park! Come back later to meet more friends :)');
     window.location.href = 'profile.html';
@@ -108,6 +108,7 @@ document.getElementById('logout').addEventListener('click', logout);
 
 function logout(){
   localStorage.removeItem('currentUser')
+  myProfile = {};
   window.location.href = 'login.html';
 }
 

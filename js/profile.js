@@ -104,5 +104,6 @@ document.getElementById('petCardDrop').addEventListener('click', handleChangeSel
 
 function logout(){
   localStorage.removeItem('currentUser')
+  myProfile = {};
   window.location.href = 'login.html';
 }
