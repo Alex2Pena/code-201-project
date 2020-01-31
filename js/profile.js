@@ -86,9 +86,11 @@ function renderProfile(){
 function addDropDownOptions(){
   var dropDown = document.getElementById('petCardDrop')
   for ( var i = 0; i<myProfile.petCards.length; i++){   
-    var dropItems = document.createElement('option')
-    dropItems.textContent = myProfile.petCards[i].name;
-    dropDown.appendChild(dropItems);
+    if(myProfile.petCards[i].owner === myProfile.username){
+      var dropItems = document.createElement('option')
+      dropItems.textContent = myProfile.petCards[i].name;
+      dropDown.appendChild(dropItems);
+    }
   }
   if(myProfile.petCards[0]){
     myProfile.selectedPet = myProfile.petCards[0];
