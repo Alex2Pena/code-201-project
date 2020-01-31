@@ -50,9 +50,6 @@ function updateProfileDataInStorage() {
     localStorage.setItem('currentUser', myProfileDataString);
     localStorage.setItem('allProfiles', allProfilesDataString);
     localStorage.setItem('allPetCards', allPetCardsDataString);
-    console.log(myProfile);
-    console.log(allProfiles);
-    console.log(allPetCards);
   }
 }
 
@@ -103,11 +100,11 @@ var generateInteraction = function (interactionType) {//JAN28 ANTHONY: petCardTy
   return newInteraction;
 };
 
-var randomPetCard = function() {
+var randomPetCard = function () {
   var petCard = {};
   var petCardIndex = 0;
   do {
-    console.log('loop');
+
     petCardIndex = Math.floor(Math.random() * allPetCards.length);
     petCard = allPetCards[petCardIndex];
   } while (petCard.owner === myProfile.username);
