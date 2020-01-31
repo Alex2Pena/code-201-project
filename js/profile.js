@@ -89,7 +89,7 @@ function addDropDownOptions(){
   }
 };
 
-}
+
 };
 addDropDownOptions();
 renderProfile();
