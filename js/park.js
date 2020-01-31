@@ -7,6 +7,14 @@ function loginWall(){
 loginWall();
 
 var interactionObject = generateInteraction('random');
+checkInteraction();
+
+function checkInteraction (){
+  if (!interactionObject.petCardNew){
+    alert('You have met every dog at the park! Come back later to meet more friends :)');
+    window.location.href = 'profile.html';
+  }
+}
 
 function cardMaker(petCard){
   if(petCard === undefined){
