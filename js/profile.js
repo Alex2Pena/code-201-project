@@ -2,7 +2,7 @@
 
 function loginWall(){
   if (!myProfile.username)
-  window.location.href = 'login.html'
+  window.location.href = '/code-201-project/login.html'
 };
 loginWall();
 
