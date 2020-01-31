@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    background-image: url(/img/stockphotos/sky.jpg);
+    background-image: url(img/stockphotos/sky.jpg);
     z-index: -2;
 }
 #mainLogo{
@@ -78,7 +78,7 @@ fieldset{
     text-align: center ;
     border-radius: 40%;
     border-width: 4px;
-    background-image: url(/img/bone.png);
+    background-image: url(img/bone.png);
     background-color: rgb(73, 167, 255);
     border-style: dashed;
 

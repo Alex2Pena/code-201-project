@@ -6,7 +6,7 @@
 
 body{
     margin: 0;
-    background-image: url(/img/stockphotos/sky.jpg);
+    background-image: url(img/stockphotos/sky.jpg);
     z-index: -2;
 
 }
@@ -153,7 +153,7 @@ h2 img{
     background-color: rgb(199, 233, 155);
     border-radius: 15px;
     padding: 15px;
-    background-image: url(/img/bone.png);
+    background-image: url(img/bone.png);
     box-shadow: 10px 5px 5px rgb(100, 100, 100);
 
 }
