@@ -52,7 +52,7 @@
 
 function loginWall(){
   if (!myProfile.username)
-  window.location.href = 'login.html'
+  window.location.href = '/code-201-project/login.html'
 };
 loginWall();
 
@@ -63,7 +63,7 @@ checkInteraction();
 function checkInteraction (){// ABC JAN30: Handles if there is an invalid interaction for any reason.
   if (!interactionObject.petCardNew){
     alert('You have met every dog at the park! Come back later to meet more friends :)');
-    window.location.href = 'profile.html';
+    window.location.href = '/code-201-project/profile.html';
   }
 }
 
