@@ -105,7 +105,13 @@ var generateInteraction = function (interactionType) {//JAN28 ANTHONY: petCardTy
 var randomPetCard = function() {
   var petCard = {};
   var petCardIndex = 0;
-  if(allPetCards.length <= myProfile.petCards.length){
+  var ownedPetCards = [];
+  for (var i=0; i<myProfile.petCards.length;i++){
+    if(myProfile.petCards[i].name === myProfile.username){
+      ownedPetCards.push(myProfile.petCards[i]);
+    }
+  }
+  if(allPetCards.length <= ownedPetCards.length){
     return {}; // ABC JAN30: returns empty object if there aren't any other pets besides the users' (would cause infinite loop)
   }
   do {
