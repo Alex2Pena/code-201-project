@@ -90,7 +90,6 @@ function addDropDownOptions(){
 };
 
 
-};
 addDropDownOptions();
 renderProfile();
 
