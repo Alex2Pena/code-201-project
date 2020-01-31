@@ -14,7 +14,10 @@ function initialize() {
   if (JSON.parse(localStorage.getItem('allPetCards'))) {
     allPetCards = JSON.parse(localStorage.getItem('allPetCards'));
   }
+ 
 }
+
+
 
 //Constructor Function for creating profiles//
 var Profile = function (username, password, email) {
