@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    background-image: url(/img/dog-photos.png);
+    background-image: url(img/dog-photos.png);
     z-index: -2;
 }
 #mainLogo{
