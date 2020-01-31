@@ -78,7 +78,7 @@ fieldset{
     text-align: center ;
     border-radius: 40%;
     border-width: 4px;
-    background-image: url(img/bone.png);
+    background-image: url("../img/bone.png");
     background-color: rgb(73, 167, 255);
     border-style: dashed;
 
