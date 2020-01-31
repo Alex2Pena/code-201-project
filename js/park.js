@@ -160,7 +160,7 @@ document.getElementById('logout').addEventListener('click', logout);
 function logout(){
   localStorage.removeItem('currentUser')
   myProfile = {};
-  window.location.href = 'login.html';
+  window.location.href = '/code-201-project/login.html';
 }
 
 function collectPetCard(){
