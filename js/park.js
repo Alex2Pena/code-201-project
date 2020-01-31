@@ -1,4 +1,54 @@
-'use strict';
+// generateInteraction();
+
+// var petCardContainer = document.getElementById('userDog');
+// var petCard = document.createElement('div');
+
+// var petCardData = myProfile.petCards[0]; // Get petCard data from list of petCards in myProfile
+
+// // var petCard = document.createElement('div'); // Create petCard element to hold all petCard content
+
+// var petCardName = document.createElement('h3'); // Get petCard name and attach to petCard
+// petCardName.textContent = petCardData.name;
+// petCard.appendChild(petCardName);
+
+// var petCardImageBox = document.createElement('img'); // Get petCard image and attach to petCard
+// petCardImageBox.src = petCardData.image;
+// petCard.appendChild(petCardImageBox);
+
+
+// var petCardTextBox = document.createElement('section'); // Create text box to hold all petCard text
+// petCard.appendChild(petCardTextBox);
+
+// var petCardStatList = document.createElement('ul'); // Create list to have all petCard stats
+// petCardStatList.textContent = '';
+// petCardTextBox.appendChild(petCardStatList);
+
+
+// // All 6 petCard stats defined and added to list
+// var petCardTextGoodDog = document.createElement('li');
+// petCardTextGoodDog.textContent = `Good Dog: ${petCardData.goodDog}`;
+// var petCardTextFloofiness = document.createElement('li');
+// petCardTextFloofiness.textContent = `Floofiness: ${petCardData.floofiness}`;
+// var petCardTextEnergy = document.createElement('li');
+// petCardTextEnergy.textContent = `Energy: ${petCardData.energy}`;
+// var petCardTextSnuggles = document.createElement('li');
+// petCardTextSnuggles.textContent = `Snuggles: ${petCardData.snuggles}`;
+// var petCardTextAppetite = document.createElement('li');
+// petCardTextAppetite.textContent = `Appetite: ${petCardData.appetite}`;
+// var petCardTextBravery = document.createElement('li');
+// petCardTextBravery.textContent = `Bravery: ${petCardData.bravery}`;
+// petCardStatList.appendChild(petCardTextGoodDog);
+// petCardStatList.appendChild(petCardTextFloofiness);
+// petCardStatList.appendChild(petCardTextEnergy);
+// petCardStatList.appendChild(petCardTextSnuggles);
+// petCardStatList.appendChild(petCardTextAppetite);
+// petCardStatList.appendChild(petCardTextBravery);
+// petCardContainer.appendChild(petCard);
+
+
+
+//--------------------------------------------------------------------------//
+
 
 function loginWall(){
   if (!myProfile.username)
@@ -7,6 +57,7 @@ function loginWall(){
 loginWall();
 
 var interactionObject = generateInteraction('random');
+
 checkInteraction();
 
 function checkInteraction (){// ABC JAN30: Handles if there is an invalid interaction for any reason.
@@ -133,3 +184,4 @@ cardMaker(interactionObject.petCardNew);
 
 renderInteraction();
 collectPetCard();
+

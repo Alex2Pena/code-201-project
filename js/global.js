@@ -130,7 +130,7 @@ var generateInteraction = function (interactionType) {//JAN28 ANTHONY: petCardTy
   return newInteraction;
 };
 
-var randomPetCard = function() {
+var randomPetCard = function () {
   var petCard = {};
   var petCardIndex = 0;
   var ownedPetCards = [];
