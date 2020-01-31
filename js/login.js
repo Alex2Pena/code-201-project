@@ -16,7 +16,7 @@ function check() {
         if (allProfiles[i].password == userPw){
           j = i;
           populateLocal();//JAN29 ANTHONY: AT THIS POINT LOGIN IS VALIDATED... AND USER GOES TO PROFILE PAGE? OR??
-          window.location.href = 'profile.html';
+          window.location.href = '/code-201-project/profile.html';
           return;
         } //JAN29 ANTHONY: ELSE USERNAME EXISTS, BUT PASSWORD IS INCORRECT. LEAVE USERNAME INPUT POPULATED, CLEAR PASSWORD INPUT FIELD
         else //(localStorage.getItem(userName).password !== userpw){
@@ -32,7 +32,7 @@ function check() {
     }
   } else{
     alert('Please create a profile.');
-    window.location.href = 'signup.html';
+    window.location.href = '/code-201-project/signup.html';
   }
 
   if (i >= allProfiles.length){
@@ -40,7 +40,7 @@ function check() {
   }
 }
 function redirect(){
-  window.location.href = 'signup.html';
+  window.location.href = '/code-201-project/signup.html';
 };
 
 function populateLocal(){
