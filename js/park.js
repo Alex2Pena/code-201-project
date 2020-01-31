@@ -4,23 +4,28 @@ function loginWall(){
   if (!myProfile.username)
   window.location.href = 'login.html'
 };
- loginWall();
+loginWall();
 
 var interactionObject = generateInteraction('random');
-// cardMaker(Interaction.userName, Interaction.random);
-// console.log(interactionObject);
-// console.log(interactionObject.petCardNew);
+checkInteraction();
 
+function checkInteraction (){// ABC JAN30: Handles if there is an invalid interaction for any reason.
+  if (!interactionObject.petCardNew){
+    alert('You have met every dog at the park! Come back later to meet more friends :)');
+    window.location.href = 'profile.html';
+  }
+}
 
 function cardMaker(petCard){
-  var elementID;
+  if(petCard === undefined){
+    return; // ABC JAN30: if petCard is undefined, do nothing
+  }
 
+  var elementID;
   if (petCard.owner === myProfile.username){
     elementID = 'userDog';
-    console.log(elementID);
   }else{
     elementID = 'guestDog';
-    console.log(elementID);
   }
 
   var petCardContainer = document.getElementById(elementID);// Dependent of if ststement from function cardMaker if statement.
@@ -62,8 +67,11 @@ function cardMaker(petCard){
   petCardStatList.appendChild(petCardTextBravery);
   petCardContainer.appendChild(petCardLocation);
 }
-// interactionID = 'userChat';
+
 function renderInteraction(){
+  if(!interactionObject.petCardNew){
+    return; // ABC JAN30: If the interactionObject is empty, do nothing
+  }
   var petInteractContainer = document.getElementById('textField');
 
 
@@ -100,33 +108,28 @@ document.getElementById('logout').addEventListener('click', logout);
 
 function logout(){
   localStorage.removeItem('currentUser')
+  myProfile = {};
   window.location.href = 'login.html';
 }
 
 function collectPetCard(){
+  if(!interactionObject.petCardNew){
+    return; //ABC JAN30: If interaction object does not have a new pet card, do nothing
+  }
   var match = false;
-  // for (var i=0; myProfile.petCards.length; i++){
-  //   console.log(match);
-  //   console.log(interactionObject);
-  //   console.log(interactionObject.petCardNew);
-  //   console.log(interactionObject.petCardNew.name);
-  //   console.log(myProfile.petCards[i].name);
-  //   console.log(i);
-  //   if(myProfile.petCards[i].name===interactionObject.petCardNew.name){
-  //     match = true;
-  //   }
-  // }
-  console.log(match);
+  for (var i=0; i<myProfile.petCards.length; i++){
+    if(myProfile.petCards[i].name===interactionObject.petCardNew.name){
+      match = true;
+    }
+  }
   if(!match){
-    console.log(myProfile);
     myProfile.petCards.push(interactionObject.petCardNew);
-    console.log('test');
     updateProfileDataInStorage();
-
   }
 }
 
 cardMaker(interactionObject.petCardMe);
 cardMaker(interactionObject.petCardNew);
+
 renderInteraction();
 collectPetCard();
