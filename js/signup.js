@@ -12,7 +12,6 @@ function handleSubmit(event) {
   var email = event.target.email.value;
 
   myProfile = new Profile(username, password, email);
-  console.log(myProfile);
   updateProfileDataInStorage();
 }
 

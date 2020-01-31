@@ -6,6 +6,16 @@ function loginWall(){
 };
 loginWall();
 
+function handleChangeSelectedDog(){
+  var selectedName = event.target.selectedOptions[0].value;
+  for (var i=0;i<myProfile.petCards.length;i++){
+    if (selectedName === myProfile.petCards[i].name){
+      myProfile.selectedPet = myProfile.petCards[i];
+      updateProfileDataInStorage();
+    }
+  }
+}
+
 function renderPetCards() {
   var petCardsOwnedList = document.getElementById('petCardsOwnedList');
   var collectionList = document.getElementById('collectionList');
@@ -74,18 +84,23 @@ function renderProfile(){
 }
 // Carrington adding a function to allow selection of current active pet to send to the park
 function addDropDownOptions(){
-    var dropDown = document.getElementById('petCardDrop')
-for ( var i = 0; i<myProfile.petCards.length; i++){   
+  var dropDown = document.getElementById('petCardDrop')
+  for ( var i = 0; i<myProfile.petCards.length; i++){   
     var dropItems = document.createElement('option')
-    dropItems.textContent = myProfile.petCards[i].name
+    dropItems.textContent = myProfile.petCards[i].name;
     dropDown.appendChild(dropItems);
-
-}
+  }
+  if(myProfile.petCards[0]){
+    myProfile.selectedPet = myProfile.petCards[0];
+    updateProfileDataInStorage();
+  }
 };
+
 addDropDownOptions();
 renderProfile();
 
 document.getElementById('logout').addEventListener('click', logout);
+document.getElementById('petCardDrop').addEventListener('click', handleChangeSelectedDog);
 
 function logout(){
   localStorage.removeItem('currentUser')
