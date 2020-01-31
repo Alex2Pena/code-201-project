@@ -15,7 +15,7 @@ nav{
     position: relative;
     margin-top: 0px;
     float: right;
-    
+    font-size: 20px;
 }
 header{
     height: 130px;
@@ -63,7 +63,7 @@ h1{
     z-index: -1;
 }
 #navLinks img{
-    height: 20px;
+    height: 40px;
     display: inline-block;
     position: relative;
     float: right;
@@ -72,9 +72,9 @@ h1{
 fieldset{
     width: 500px;
     position: absolute;
-    height: 200px;
-    top: 350px;
-    right: 850px;
+    height: 250px;
+    top: 300px;
+    right: 900px;
     text-align: center ;
     border-radius: 40%;
     border-width: 4px;
@@ -82,16 +82,17 @@ fieldset{
     background-color: rgb(73, 167, 255);
     border-style: dashed;
 
-
 }
 
 input[type=text], input[type=password] {
-    width: 350 px;
+    width: 200px;
+    height: 50px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 20px;
   }
   .container1{
       width: 450px;
@@ -120,11 +121,14 @@ input{
 }
 
 button{
-    width: 100px;
+    width: 150px;
     height: 50px;
     border-radius: 40%;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
 }
 button img{
     width: 20px;
@@ -132,7 +136,7 @@ button img{
 }
 
 #pep{
-    width: 250px;
+    width: 300px;
     border-radius: 50%;
     padding: 2px;
     border:1px solid #ffffff;
@@ -142,7 +146,7 @@ button img{
     left:300px;
 }
 #pep2{
-    width: 250px;
+    width: 300px;
     border-radius: 50%;
     padding: 2px;
     border:1px solid #ffffff;
@@ -164,8 +168,8 @@ button img{
 }
 
 #combo{
-    position: absolute;
-    bottom: 100px;
-    right: 650px;
-    width: 800px;
+    position: fixed;
+    width: 900px;
+    margin-top: 650px;
+    margin-left: 500px;
 }
