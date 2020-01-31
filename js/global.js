@@ -14,8 +14,36 @@ function initialize() {
   if (JSON.parse(localStorage.getItem('allPetCards'))) {
     allPetCards = JSON.parse(localStorage.getItem('allPetCards'));
   }
- 
+  if (allProfiles.length===0){
+    addPredefinedProfilesToStorage();//ABC JAN31 Only load initial data if there's no data
+    addPredefinedPetCardsToStorage();
+  }
 }
+function addPredefinedProfilesToStorage(){ //ABC JAN30: Data for initial profiles (for demo purposes)
+  var profileData = [{'username':'Andrew','password':'test','email':'test@test.com','petCards':[{'name':'Tucker','image':'img/Tucker.png','sex':'male','age':'2','birthday':'','owner':'Andrew','dateCollected':'2020-01-31T05:41:24.433Z','dateCreated':'2020-01-31T05:41:24.433Z','goodDog':'10','floofiness':'1','energy':'9','snuggles':'8','appetite':'8','bravery':'7'}],'selectedPet':{'name':'Tucker','image':'img/Tucker.png','sex':'male','age':'2','birthday':'','owner':'Andrew','dateCollected':'2020-01-31T05:41:24.433Z','dateCreated':'2020-01-31T05:41:24.433Z','goodDog':'10','floofiness':'1','energy':'9','snuggles':'8','appetite':'8','bravery':'7'}},
+    {'username':'TJ','password':'test','email':'test','petCards':[{'name':'Nancy','image':'img/Nancy.jpg','sex':'female','age':'55','birthday':'','owner':'TJ','dateCollected':'2020-01-31T07:17:47.836Z','dateCreated':'2020-01-31T07:17:47.836Z','goodDog':'10','floofiness':'1','energy':'5','snuggles':'0','appetite':'0','bravery':'10'},{'name':'Riggs','image':'img/ricks.png','sex':'male','age':'1','birthday':'','owner':'codefellows','dateCollected':'2020-01-31T07:19:22.491Z','dateCreated':'2020-01-31T07:19:22.491Z','goodDog':'10','floofiness':'8','energy':'6','snuggles':'10','appetite':'3','bravery':'8'},{'name':'Tucker','image':'img/Tucker.png','sex':'male','age':'2','birthday':'','owner':'Andrew','dateCollected':'2020-01-31T05:41:24.433Z','dateCreated':'2020-01-31T05:41:24.433Z','goodDog':'10','floofiness':'1','energy':'9','snuggles':'8','appetite':'8','bravery':'7'},{'name':'Habana','image':'img/habana.png','sex':'female','age':'13','birthday':'','owner':'Teddy','dateCollected':'2020-01-31T07:20:29.332Z','dateCreated':'2020-01-31T07:20:29.332Z','goodDog':'10','floofiness':'4','energy':'4','snuggles':'6','appetite':'4','bravery':'4'}],'selectedPet':{'name':'Nancy','image':'img/Nancy.jpg','sex':'female','age':'55','birthday':'','owner':'TJ','dateCollected':'2020-01-31T07:17:47.836Z','dateCreated':'2020-01-31T07:17:47.836Z','goodDog':'10','floofiness':'1','energy':'5','snuggles':'0','appetite':'0','bravery':'10'}},
+    {'username':'codefellows','password':'test','email':'test','petCards':[{'name':'Riggs','image':'img/ricks.png','sex':'male','age':'1','birthday':'','owner':'codefellows','dateCollected':'2020-01-31T07:19:22.491Z','dateCreated':'2020-01-31T07:19:22.491Z','goodDog':'10','floofiness':'8','energy':'6','snuggles':'10','appetite':'3','bravery':'8'},{'name':'Ginger','image':'img/Ginger.png','sex':'female','age':'7','birthday':'','owner':'codefellows','dateCollected':'2020-01-31T07:19:51.769Z','dateCreated':'2020-01-31T07:19:51.769Z','goodDog':'10','floofiness':'7','energy':'5','snuggles':'6','appetite':'4','bravery':'6'}],'selectedPet':{'name':'Riggs','image':'img/ricks.png','sex':'male','age':'1','birthday':'','owner':'codefellows','dateCollected':'2020-01-31T07:19:22.491Z','dateCreated':'2020-01-31T07:19:22.491Z','goodDog':'10','floofiness':'8','energy':'6','snuggles':'10','appetite':'3','bravery':'8'}},
+    {'username':'Teddy','password':'test','email':'test','petCards':[{'name':'Habana','image':'img/habana.png','sex':'female','age':'13','birthday':'','owner':'Teddy','dateCollected':'2020-01-31T07:20:29.332Z','dateCreated':'2020-01-31T07:20:29.332Z','goodDog':'10','floofiness':'4','energy':'4','snuggles':'6','appetite':'4','bravery':'4'}],'selectedPet':{'name':'Habana','image':'img/habana.png','sex':'female','age':'13','birthday':'','owner':'Teddy','dateCollected':'2020-01-31T07:20:29.332Z','dateCreated':'2020-01-31T07:20:29.332Z','goodDog':'10','floofiness':'4','energy':'4','snuggles':'6','appetite':'4','bravery':'4'}},
+    {'username':'Morgan','password':'test','email':'test','petCards':[{'name':'Zangief','image':'img/Zangief.JPG','sex':'male','age':'11','birthday':'','owner':'Morgan','dateCollected':'2020-01-31T07:27:32.857Z','dateCreated':'2020-01-31T07:27:32.857Z','goodDog':'10','floofiness':'5','energy':'5','snuggles':'5','appetite':'5','bravery':'5'}],'selectedPet':{'name':'Zangief','image':'img/Zangief.JPG','sex':'male','age':'11','birthday':'','owner':'Morgan','dateCollected':'2020-01-31T07:27:32.857Z','dateCreated':'2020-01-31T07:27:32.857Z','goodDog':'10','floofiness':'5','energy':'5','snuggles':'5','appetite':'5','bravery':'5'}},
+    {'username':'Brook','password':'test','email':'test','petCards':[{'name':'Mia','image':'img/Mia.jpeg','sex':'female','age':'0','birthday':'','owner':'Brook','dateCollected':'2020-01-31T07:49:47.402Z','dateCreated':'2020-01-31T07:49:47.402Z','goodDog':'10','floofiness':'5','energy':'5','snuggles':'5','appetite':'5','bravery':'5'}],'selectedPet':{'name':'Mia','image':'img/Mia.jpeg','sex':'female','age':'0','birthday':'','owner':'Brook','dateCollected':'2020-01-31T07:49:47.402Z','dateCreated':'2020-01-31T07:49:47.402Z','goodDog':'10','floofiness':'5','energy':'5','snuggles':'5','appetite':'5','bravery':'5'}}];
+  var profileDataString = JSON.stringify(profileData);
+  localStorage.setItem('allProfiles', profileDataString);
+}
+function addPredefinedPetCardsToStorage(){ //ABC JAN30: Data for initial petCards (for demo purposes)
+  var petCardData = [{'name':'Tucker','image':'img/Tucker.png','sex':'male','age':'2','birthday':'','owner':'Andrew','dateCollected':'2020-01-31T05:41:24.433Z','dateCreated':'2020-01-31T05:41:24.433Z','goodDog':'10','floofiness':'1','energy':'9','snuggles':'8','appetite':'8','bravery':'7'},
+    {'name':'Nancy','image':'img/Nancy.jpg','sex':'female','age':'55','birthday':'','owner':'TJ','dateCollected':'2020-01-31T07:17:47.836Z','dateCreated':'2020-01-31T07:17:47.836Z','goodDog':'10','floofiness':'1','energy':'5','snuggles':'0','appetite':'0','bravery':'10'},
+    {'name':'Riggs','image':'img/ricks.png','sex':'male','age':'1','birthday':'','owner':'codefellows','dateCollected':'2020-01-31T07:19:22.491Z','dateCreated':'2020-01-31T07:19:22.491Z','goodDog':'10','floofiness':'8','energy':'6','snuggles':'10','appetite':'3','bravery':'8'},
+    {'name':'Ginger','image':'img/Ginger.png','sex':'female','age':'7','birthday':'','owner':'codefellows','dateCollected':'2020-01-31T07:19:51.769Z','dateCreated':'2020-01-31T07:19:51.769Z','goodDog':'10','floofiness':'7','energy':'5','snuggles':'6','appetite':'4','bravery':'6'},
+    {'name':'Habana','image':'img/habana.png','sex':'female','age':'13','birthday':'','owner':'Teddy','dateCollected':'2020-01-31T07:20:29.332Z','dateCreated':'2020-01-31T07:20:29.332Z','goodDog':'10','floofiness':'4','energy':'4','snuggles':'6','appetite':'4','bravery':'4'},
+    {'name':'Zangief','image':'img/Zangief.JPG','sex':'male','age':'11','birthday':'','owner':'Morgan','dateCollected':'2020-01-31T07:27:32.857Z','dateCreated':'2020-01-31T07:27:32.857Z','goodDog':'10','floofiness':'5','energy':'5','snuggles':'5','appetite':'5','bravery':'5'},
+    {'name':'Mia','image':'img/Mia.jpeg','sex':'female','age':'0','birthday':'','owner':'Brook','dateCollected':'2020-01-31T07:49:47.402Z','dateCreated':'2020-01-31T07:49:47.402Z','goodDog':'10','floofiness':'5','energy':'5','snuggles':'5','appetite':'5','bravery':'5'}];
+  var petCardDataString = JSON.stringify(petCardData);
+  localStorage.setItem('allPetCards', petCardDataString);
+}
+
+
+
+
 
 
 
@@ -80,7 +108,7 @@ createInteraction.addEventListener('click', generateInteraction);//JAN28 ANTHONY
 var generateInteraction = function (interactionType) {//JAN28 ANTHONY: petCardType can be set to random, or a specific card from your collection
   if(!myProfile.selectedPet.name){
     if (myProfile.petCards.length > 0){
-      myProfile.selectedPet = myProfile.petCards[0];// ABC JAN30: If the user hasn't selected a pet and they have at least one pet, default to their first pet
+      // myProfile.selectedPet = myProfile.petCards[0];// ABC JAN30: If the user hasn't selected a pet and they have at least one pet, default to their first pet
     } else {
       alert('You have no pups! Go to add dog to create a furry friend.');// ABC JAN30: If the user hasn't selected a pet and they don't have any pets, alert them and send them to the creator page
       window.location.href = 'creator.html';
@@ -90,12 +118,12 @@ var generateInteraction = function (interactionType) {//JAN28 ANTHONY: petCardTy
 
   var petCardNew = {}; // Determine guest pet
   if (interactionType === 'random') {
-    petCardNew = randomPetCard();//JAN28 ANTHONY: selecting random pet card  
+    petCardNew = randomPetCard();//JAN28 ANTHONY: selecting random pet card
   }
   if (!petCardNew.name){ //ABC JAN30: Checks that petCardNew is a valid object
     return {};
   }
-  
+
   var chosenHelloArray = randomHelloArray(myProfile.selectedPet.name, petCardNew.name);//select random helloArray
   var chosenByeArray = randomByeArray(myProfile.selectedPet.name, petCardNew.name);//select random byeArray
   var newInteraction = new Interaction(myProfile.selectedPet, petCardNew, chosenHelloArray, chosenByeArray);
