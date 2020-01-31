@@ -92,6 +92,7 @@ function addDropDownOptions(){
   }
   if(myProfile.petCards[0]){
     myProfile.selectedPet = myProfile.petCards[0];
+    updateProfileDataInStorage();
   }
 };
 
@@ -99,7 +100,7 @@ addDropDownOptions();
 renderProfile();
 
 document.getElementById('logout').addEventListener('click', logout);
-document.getElementById('petCardDrop').addEventListener('onchange', handleChangeSelectedDog);
+document.getElementById('petCardDrop').addEventListener('click', handleChangeSelectedDog);
 
 function logout(){
   localStorage.removeItem('currentUser')

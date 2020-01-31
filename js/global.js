@@ -50,6 +50,9 @@ function updateProfileDataInStorage() {
     localStorage.setItem('currentUser', myProfileDataString);
     localStorage.setItem('allProfiles', allProfilesDataString);
     localStorage.setItem('allPetCards', allPetCardsDataString);
+    console.log(myProfile);
+    console.log(allProfiles);
+    console.log(allPetCards);
   }
 }
 

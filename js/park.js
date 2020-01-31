@@ -121,7 +121,6 @@ function collectPetCard(){
     console.log(myProfile);
     myProfile.petCards.push(interactionObject.petCardNew);
     console.log('test');
-    updateAllProfilesFromMyProfile();
     updateProfileDataInStorage();
 
   }
