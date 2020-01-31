@@ -114,7 +114,7 @@ h2 img{
     background-color: rgb(217, 241, 255);
     border-radius: 15px;
     padding: 15px;
-    background-image: url(/img/bone.png);
+    background-image: url("../img/bone.png");
     text-align: center;
     box-shadow: 10px 5px 5px rgb(100, 100, 100);
     
@@ -153,7 +153,7 @@ h2 img{
     background-color: rgb(199, 233, 155);
     border-radius: 15px;
     padding: 15px;
-    background-image: url(img/bone.png);
+    background-image: url("../img/bone.png");
     box-shadow: 10px 5px 5px rgb(100, 100, 100);
 
 }
